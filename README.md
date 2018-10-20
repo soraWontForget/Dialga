@@ -11,7 +11,7 @@
 
 4. Install using `adb install [/PATH/TO/APK]` without square brackets.
 
-5. Use the WearOS app on your phone or change the watch face directly on your wearable to change the current watch face to Dialga if it did not change automatically.
+5. Use the WearOS app on your phone to change the current watch face to Dialga if it did not change automatically or change the watch face directly on your wearable.
 
 ### Uninstall
 
