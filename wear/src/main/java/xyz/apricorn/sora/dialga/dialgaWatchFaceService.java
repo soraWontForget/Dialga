@@ -20,22 +20,19 @@ import android.support.wearable.watchface.WatchFaceStyle;
 import android.view.SurfaceHolder;
 
 import java.lang.ref.WeakReference;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Analog watch face with a ticking second hand. In ambient mode, the second hand isn't
- * shown. On devices with low-bit ambient mode, the hands are drawn without anti-aliasing in ambient
- * mode. The watch face is drawn with less contrast in mute mode.
- * <p>
- * Important Note: Because watch face apps do not have a default Activity in
- * their project, you will need to set your Configurations to
- * "Do not launch Activity" for both the Wear and/or Application modules. If you
- * are unsure how to do this, please review the "Run Starter project" section
- * in the Google Watch Face Code Lab:
- * https://codelabs.developers.google.com/codelabs/watchface/index.html#0
- */
+/*import xyz.apricorn.sora.dialga.iconAndBackgroundBitmaps;*/
+
+/*import static xyz.apricorn.sora.dialga.iconAndBackgroundBitmaps.fuckinga;*/
+
+
 public class dialgaWatchFace extends CanvasWatchFaceService {
     /*
      * Updates rate in milliseconds for interactive mode. We update once a second to advance the
@@ -43,6 +40,8 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
      */
 
     private static final long INTERACTIVE_UPDATE_RATE_MS = TimeUnit.SECONDS.toMillis(1);
+    /*private static int backgroundSetter;*/
+    public int placeholder;
 
     /**
      * Handler message id for updating the time periodically in interactive mode.
@@ -83,15 +82,23 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
 
 
 
+
         /* Handler to update the time once a second in interactive mode. */
         private final Handler mUpdateTimeHandler = new EngineHandler(this);
 
         private Calendar mCalendar;
+        private int hour;
+        private int minute;
+        private int timeOfDay = 0;
+        private int hourTimer;
+        private int dexNumber = 0;
+
         private final BroadcastReceiver mTimeZoneReceiver = new BroadcastReceiver() {
-            @Override
-            public void onReceive(Context context, Intent intent) {
-                mCalendar.setTimeZone(TimeZone.getDefault());
-                invalidate();
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+        mCalendar.setTimeZone(TimeZone.getDefault());
+        invalidate();
 
 
             }
@@ -112,6 +119,8 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
         private float ldrIconBitmapWitdhScaler;
         private float ldrIconBitmapHeightScaler;
 
+
+
         /* Colors for all hands (hour, minute, seconds, ticks) based on photo loaded. */
         private int mWatchHandColor;
         private int mWatchHandShadowColor;
@@ -130,21 +139,27 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
         public void onCreate(SurfaceHolder holder) {
             super.onCreate(holder);
 
+            GregorianCalendar now = new GregorianCalendar();
+            mCalendar = Calendar.getInstance();
+            hour = now.get(Calendar.HOUR);
+            minute = now.get(Calendar.MINUTE);
+
+
             initializeBackground();
             initializeWatchFace();
 
             setWatchFaceStyle(new WatchFaceStyle.Builder(dialgaWatchFace.this)
-                    .setAccentColor(mWatchHandColor)
                     .build());
 
-            mCalendar = Calendar.getInstance();
+
 
         }
 
         private void initializeBackground() {
+            /*updateTimeOfDay();*/
             mBackgroundPaint = new Paint();
             mBackgroundPaint.setColor(Color.BLACK);
-            mBackgroundBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.pokemon_park_dawn_wallpaper);
+            mBackgroundBitmap = BitmapFactory.decodeResource(getResources(), iconAndBackgroundBitmaps.currentBackground(timeOfDay));/*R.drawable.pokemon_park_day_wallpaper);
 
             /* Extracts colors from background image to improve watchface style. */
             Palette.from(mBackgroundBitmap).generate(new Palette.PaletteAsyncListener() {
@@ -162,8 +177,8 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
 
         private void initializeWatchFace() {
 
-            secondsHandIconBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.umbreon);
-            pkmnTeamLeadBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.espeon);
+            secondsHandIconBitmap = /*fuckinga(dexNumber);*/BitmapFactory.decodeResource(getResources(), iconAndBackgroundBitmaps.fuckinga(dexNumber) /*R.drawable.umbreon*/);
+            pkmnTeamLeadBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.espeon);/*iconAndBackgroundBitmaps.fuckinga(dexNumber));*/
 
             /* Set defaults for colors */
             mHourPaint = new Paint();
@@ -195,6 +210,7 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
 
         }
 
+
         @Override
         public void onDestroy() {
             mUpdateTimeHandler.removeMessages(MSG_UPDATE_TIME);
@@ -211,14 +227,78 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
         @Override
         public void onTimeTick() {
             super.onTimeTick();
+            /*hourChecker();*/
             invalidate();
         }
+
+
+        /*public void updateTimeOfDay() {
+
+            GregorianCalendar now = new GregorianCalendar();
+
+            if (now.get(Calendar.AM) == 0) {
+
+                if (hour >= 5 & hour < 9) {
+
+                        timeOfDay = 1;
+
+
+                } else if ( hour >= 9 ){
+
+                    timeOfDay = 2;
+
+                }
+            } else if ( now.get(Calendar.AM) != 0 ){
+
+                if ( hour == 12){
+
+                    timeOfDay = 2;
+
+                } else if ( hour >= 1 & hour < 6 ){
+
+                    timeOfDay = 2;
+
+                } else if ( hour >= 6 & hour < 8 ) {
+
+                    timeOfDay = 3;
+                }
+
+            } else {
+
+                timeOfDay = 4;
+            }
+        }*/
+         /*       timeOfDay = 1;
+            } else if ( hour >= 1000 ) {
+                backgroundSetter = 2;
+            } else if ( timeOfDay >= 64800000 ) {
+                backgroundSetter = 3;
+            } else if ( currentTime >= 72000000 ) {
+                backgroundSetter = 4;
+            } else {
+                backgroundSetter = 4;
+            }
+
+        }*/
+
+         /*private void hourChecker(){
+
+             GregorianCalendar now = new GregorianCalendar();
+
+             if (now.get(Calendar.MINUTE) < 1 && timeOfDay != timeOfDayComparison){
+
+                updateTimeOfDay();
+
+             }
+         }*/
 
         @Override
         public void onAmbientModeChanged(boolean inAmbientMode) {
             super.onAmbientModeChanged(inAmbientMode);
             mAmbient = inAmbientMode;
             updateWatchHandStyle();
+            /*updateWeather();*/
+            /*checkTimeOfDay();*/
 
             // Check and trigger whether or not timer should be running (only in active mode)
             updateTimer();
@@ -252,6 +332,24 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
                 mTickAndCirclePaint.setShadowLayer(SHADOW_RADIUS, 0, 0, mWatchHandShadowColor);
             }
         }
+
+        /*public void checkTimeOfDay(){
+
+            if (timeOfDay != timeOfDayComparison ){
+
+                updateBackground();
+                timeOfDayComparison = timeOfDay;
+            }
+        }*/
+
+        public void updateBackground(){
+
+
+        }
+
+        public void onSurfaceRedrawNeeded(SurfaceHolder holder){
+
+        };
 
         @Override
         public void onInterruptionFilterChanged(int interruptionFilter) {
@@ -426,6 +524,7 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
             // Restore canvas to original position
             canvas.restore();
         }
+
         private void drawPokemon(Canvas canvas){
 
             //TODO
