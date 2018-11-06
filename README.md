@@ -1,6 +1,9 @@
 # Dialga
 ## A fan-made Pokemon themed Wear OS watch face
 
+Inline-style:
+![alt text](https://github.com/soraWontForget/Dialga/screenshot.png "Screenshot")
+
 ### Installation
 
 1. Build from source
