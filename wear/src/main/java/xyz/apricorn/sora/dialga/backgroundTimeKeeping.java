@@ -1,32 +1,14 @@
 package xyz.apricorn.sora.dialga;
 
-import android.widget.Toast;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-
 
 public class backgroundTimeKeeping {
 
     private static int mHour;
-    private static int mMinute;
-    private static int mSecond;
     public static String timeOfDay;
-    private static String timeOfDayComparison;
-    private static boolean timeCompare;
 
     private static GregorianCalendar now = new GregorianCalendar();
-    
-    public static void timeOfDayChecker(){
-        mMinute = now.get(Calendar.MINUTE);
-        mSecond = now.get(Calendar.SECOND);
-        /*compareTimeOfDay();*/
-        if (mMinute == 0 && mSecond == 0){
-            backgroundTimeKeeping.updateTimeOfDay();
-            //*timeOfDayComparison = timeOfDay;*//*
-        }
-    }
-
 
     public static void updateTimeOfDay() {
         mHour = now.get(Calendar.HOUR);

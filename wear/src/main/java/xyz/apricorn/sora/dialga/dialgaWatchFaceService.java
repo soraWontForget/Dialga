@@ -34,8 +34,6 @@ public class dialgaWatchFaceService extends CanvasWatchFaceService {
      */
 
     private static final long INTERACTIVE_UPDATE_RATE_MS = TimeUnit.SECONDS.toMillis(1);
-    /*private static int backgroundSetter;*/
-    public int placeholder;
 
     /**
      * Handler message id for updating the time periodically in interactive mode.
@@ -79,7 +77,6 @@ public class dialgaWatchFaceService extends CanvasWatchFaceService {
         private final Handler mUpdateTimeHandler = new EngineHandler(this);
 
         private Calendar mCalendar;
-        private int dexNumber = 3;
 
         private final BroadcastReceiver mTimeZoneReceiver = new BroadcastReceiver() {
 
@@ -91,6 +88,7 @@ public class dialgaWatchFaceService extends CanvasWatchFaceService {
 
             }
         };
+        GregorianCalendar now = new GregorianCalendar();
         private boolean mRegisteredTimeZoneReceiver = false;
         private Integer mSecondsdHandIcon;
         private String mSecondsHandPokemon;
@@ -109,9 +107,7 @@ public class dialgaWatchFaceService extends CanvasWatchFaceService {
         private float ldrIconBitmapWitdhScaler;
         private float ldrIconBitmapHeightScaler;
 
-        // Variables for date
-        /*public String timeOfDay;*/
-
+        // Time of day string
         private String mTime;
 
 
@@ -136,8 +132,9 @@ public class dialgaWatchFaceService extends CanvasWatchFaceService {
         public void onCreate(SurfaceHolder holder) {
             super.onCreate(holder);
 
-            GregorianCalendar now = new GregorianCalendar();
             mCalendar = Calendar.getInstance();
+            iconMaps.putBackgrounds();
+            iconMaps.putGenI();
             initializeBackground();
             initializeWatchFace();
 
@@ -149,8 +146,7 @@ public class dialgaWatchFaceService extends CanvasWatchFaceService {
 
         }
 
-        private void initializeBackground() {
-            iconMaps.putBackgrounds();
+        public void initializeBackground() {
             backgroundTimeKeeping.updateTimeOfDay();
             mTime = backgroundTimeKeeping.getTimeOfDay();
             Integer mBackground = iconMaps.backgrounds.get(mTime);
@@ -173,7 +169,6 @@ public class dialgaWatchFaceService extends CanvasWatchFaceService {
         }
 
         private void initializeWatchFace() {
-            iconMaps.putGenI();
             mSecondsHandPokemon = "charizard";
             mSecondsdHandIcon = iconMaps.genI.get(mSecondsHandPokemon);
             secondsHandIconBitmap = BitmapFactory.decodeResource(getResources(), mSecondsdHandIcon);
@@ -227,10 +222,21 @@ public class dialgaWatchFaceService extends CanvasWatchFaceService {
         @Override
         public void onTimeTick() {
             super.onTimeTick();
-            backgroundTimeKeeping.timeOfDayChecker();
+            timeOfDayChecker();
             invalidate();
         }
 
+        public void timeOfDayChecker(){
+            int mMinute = now.get(Calendar.MINUTE);
+            int mSecond = now.get(Calendar.SECOND);
+
+            if (mMinute == 0 && mSecond == 0){
+                backgroundTimeKeeping.updateTimeOfDay();
+                initializeBackground();
+                invalidate();
+                //*timeOfDayComparison = timeOfDay;*//*
+            }
+        }
         @Override
         public void onAmbientModeChanged(boolean inAmbientMode) {
             super.onAmbientModeChanged(inAmbientMode);
