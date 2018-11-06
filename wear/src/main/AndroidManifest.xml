@@ -21,7 +21,7 @@
             android:value="true" />
 
         <service
-            android:name=".dialgaWatchFace"
+            android:name=".dialgaWatchFaceService"
             android:label="@string/my_analog_name"
             android:permission="android.permission.BIND_WALLPAPER">
             <meta-data
@@ -29,13 +29,16 @@
                 android:resource="@xml/watch_face" />
             <meta-data
                 android:name="com.google.android.wearable.watchface.preview"
-                android:resource="@drawable/aerodactyl_wallpaper" />
+                android:resource="@drawable/pokemon_park_dawn_wallpaper" />
             <meta-data
                 android:name="com.google.android.wearable.watchface.preview_circular"
-                android:resource="@drawable/aerodactyl_wallpaper" />
-            <!--<meta-data
+                android:resource="@drawable/pokemon_park_dawn_wallpaper" />
+
+            <!--
+                <meta-data
                 android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
-                android:value="com.example.android.wearable.watchface.CONFIG_ANALOG" />-->
+                android:value="xyz.apricorn.sora.dialga.SecondsHandIconChooser" />
+            -->
 
             <intent-filter>
                 <action android:name="android.service.wallpaper.WallpaperService" />
@@ -47,6 +50,14 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <!--
+        <activity android:name="xyz.apricorn.sora.dialga.">
+            <intent-filter>
+                <action android:name="xyz.apricorn.sora.dialga.MainActivity"
+            </intent-filter>
+        </activity>
+        -->
     </application>
 
 </manifest>

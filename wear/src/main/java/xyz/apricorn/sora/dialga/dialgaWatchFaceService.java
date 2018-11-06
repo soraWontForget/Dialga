@@ -20,20 +20,14 @@ import android.support.wearable.watchface.WatchFaceStyle;
 import android.view.SurfaceHolder;
 
 import java.lang.ref.WeakReference;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
-/*import xyz.apricorn.sora.dialga.iconAndBackgroundBitmaps;*/
 
-/*import static xyz.apricorn.sora.dialga.iconAndBackgroundBitmaps.fuckinga;*/
+public class dialgaWatchFaceService extends CanvasWatchFaceService {
 
-
-public class dialgaWatchFace extends CanvasWatchFaceService {
     /*
      * Updates rate in milliseconds for interactive mode. We update once a second to advance the
      * second hand.
@@ -54,15 +48,15 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
     }
 
     private static class EngineHandler extends Handler {
-        private final WeakReference<dialgaWatchFace.Engine> mWeakReference;
+        private final WeakReference<dialgaWatchFaceService.Engine> mWeakReference;
 
-        public EngineHandler(dialgaWatchFace.Engine reference) {
+        public EngineHandler(dialgaWatchFaceService.Engine reference) {
             mWeakReference = new WeakReference<>(reference);
         }
 
         @Override
         public void handleMessage(Message msg) {
-            dialgaWatchFace.Engine engine = mWeakReference.get();
+            dialgaWatchFaceService.Engine engine = mWeakReference.get();
             if (engine != null) {
                 switch (msg.what) {
                     case MSG_UPDATE_TIME:
@@ -81,29 +75,25 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
         private static final int SHADOW_RADIUS = 6;
 
 
-
-
         /* Handler to update the time once a second in interactive mode. */
         private final Handler mUpdateTimeHandler = new EngineHandler(this);
 
         private Calendar mCalendar;
-        private int hour;
-        private int minute;
-        private int timeOfDay = 0;
-        private int hourTimer;
-        private int dexNumber = 0;
+        private int dexNumber = 3;
 
         private final BroadcastReceiver mTimeZoneReceiver = new BroadcastReceiver() {
 
-        @Override
-        public void onReceive(Context context, Intent intent) {
-        mCalendar.setTimeZone(TimeZone.getDefault());
-        invalidate();
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                mCalendar.setTimeZone(TimeZone.getDefault());
+                invalidate();
 
 
             }
         };
         private boolean mRegisteredTimeZoneReceiver = false;
+        private Integer mSecondsdHandIcon;
+        private String mSecondsHandPokemon;
         private boolean mMuteMode;
         private float mCenterX;
         private float mCenterY;
@@ -119,6 +109,11 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
         private float ldrIconBitmapWitdhScaler;
         private float ldrIconBitmapHeightScaler;
 
+        // Variables for date
+        /*public String timeOfDay;*/
+
+        private String mTime;
+
 
 
         /* Colors for all hands (hour, minute, seconds, ticks) based on photo loaded. */
@@ -130,9 +125,11 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
         private Paint mBackgroundPaint;
         private Paint secondsHandIconPaint;
         private Paint pkmnTeamLeadPaint;
+        private Paint secondHandOutlinePaint;
         private Bitmap mBackgroundBitmap;
         private Bitmap secondsHandIconBitmap;
         private Bitmap pkmnTeamLeadBitmap;
+        private Bitmap secondHandOutlineBitmap;
         private boolean mAmbient;
 
         @Override
@@ -141,14 +138,11 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
 
             GregorianCalendar now = new GregorianCalendar();
             mCalendar = Calendar.getInstance();
-            hour = now.get(Calendar.HOUR);
-            minute = now.get(Calendar.MINUTE);
-
-
             initializeBackground();
             initializeWatchFace();
 
-            setWatchFaceStyle(new WatchFaceStyle.Builder(dialgaWatchFace.this)
+
+            setWatchFaceStyle(new WatchFaceStyle.Builder(dialgaWatchFaceService.this)
                     .build());
 
 
@@ -156,11 +150,14 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
         }
 
         private void initializeBackground() {
-            /*updateTimeOfDay();*/
+            iconMaps.putBackgrounds();
+            backgroundTimeKeeping.updateTimeOfDay();
+            mTime = backgroundTimeKeeping.getTimeOfDay();
+            Integer mBackground = iconMaps.backgrounds.get(mTime);
+
             mBackgroundPaint = new Paint();
             mBackgroundPaint.setColor(Color.BLACK);
-            mBackgroundBitmap = BitmapFactory.decodeResource(getResources(), iconAndBackgroundBitmaps.currentBackground(timeOfDay));/*R.drawable.pokemon_park_day_wallpaper);
-
+            mBackgroundBitmap = BitmapFactory.decodeResource(getResources(), mBackground);
             /* Extracts colors from background image to improve watchface style. */
             Palette.from(mBackgroundBitmap).generate(new Palette.PaletteAsyncListener() {
                 @Override
@@ -176,9 +173,10 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
         }
 
         private void initializeWatchFace() {
-
-            secondsHandIconBitmap = /*fuckinga(dexNumber);*/BitmapFactory.decodeResource(getResources(), iconAndBackgroundBitmaps.fuckinga(dexNumber) /*R.drawable.umbreon*/);
-            pkmnTeamLeadBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.espeon);/*iconAndBackgroundBitmaps.fuckinga(dexNumber));*/
+            iconMaps.putGenI();
+            mSecondsHandPokemon = "charizard";
+            mSecondsdHandIcon = iconMaps.genI.get(mSecondsHandPokemon);
+            secondsHandIconBitmap = BitmapFactory.decodeResource(getResources(), mSecondsdHandIcon);
 
             /* Set defaults for colors */
             mHourPaint = new Paint();
@@ -205,11 +203,13 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
             secondsHandIconPaint = new Paint();
             secondsHandIconPaint.setAntiAlias(true);
 
-            pkmnTeamLeadPaint = new Paint();
-            pkmnTeamLeadPaint.setAntiAlias(true);
+            /*pkmnTeamLeadPaint = new Paint();
+            pkmnTeamLeadPaint.setAntiAlias(true);*/
+
+            /*secondHandOutlinePaint = new Paint();
+            secondHandOutlinePaint.setAntiAlias(true);*/
 
         }
-
 
         @Override
         public void onDestroy() {
@@ -227,78 +227,15 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
         @Override
         public void onTimeTick() {
             super.onTimeTick();
-            /*hourChecker();*/
+            backgroundTimeKeeping.timeOfDayChecker();
             invalidate();
         }
-
-
-        /*public void updateTimeOfDay() {
-
-            GregorianCalendar now = new GregorianCalendar();
-
-            if (now.get(Calendar.AM) == 0) {
-
-                if (hour >= 5 & hour < 9) {
-
-                        timeOfDay = 1;
-
-
-                } else if ( hour >= 9 ){
-
-                    timeOfDay = 2;
-
-                }
-            } else if ( now.get(Calendar.AM) != 0 ){
-
-                if ( hour == 12){
-
-                    timeOfDay = 2;
-
-                } else if ( hour >= 1 & hour < 6 ){
-
-                    timeOfDay = 2;
-
-                } else if ( hour >= 6 & hour < 8 ) {
-
-                    timeOfDay = 3;
-                }
-
-            } else {
-
-                timeOfDay = 4;
-            }
-        }*/
-         /*       timeOfDay = 1;
-            } else if ( hour >= 1000 ) {
-                backgroundSetter = 2;
-            } else if ( timeOfDay >= 64800000 ) {
-                backgroundSetter = 3;
-            } else if ( currentTime >= 72000000 ) {
-                backgroundSetter = 4;
-            } else {
-                backgroundSetter = 4;
-            }
-
-        }*/
-
-         /*private void hourChecker(){
-
-             GregorianCalendar now = new GregorianCalendar();
-
-             if (now.get(Calendar.MINUTE) < 1 && timeOfDay != timeOfDayComparison){
-
-                updateTimeOfDay();
-
-             }
-         }*/
 
         @Override
         public void onAmbientModeChanged(boolean inAmbientMode) {
             super.onAmbientModeChanged(inAmbientMode);
             mAmbient = inAmbientMode;
             updateWatchHandStyle();
-            /*updateWeather();*/
-            /*checkTimeOfDay();*/
 
             // Check and trigger whether or not timer should be running (only in active mode)
             updateTimer();
@@ -330,26 +267,11 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
                 mHourPaint.setShadowLayer(SHADOW_RADIUS, 0, 0, mWatchHandShadowColor);
                 mMinutePaint.setShadowLayer(SHADOW_RADIUS, 0, 0, mWatchHandShadowColor);
                 mTickAndCirclePaint.setShadowLayer(SHADOW_RADIUS, 0, 0, mWatchHandShadowColor);
+
+
             }
         }
 
-        /*public void checkTimeOfDay(){
-
-            if (timeOfDay != timeOfDayComparison ){
-
-                updateBackground();
-                timeOfDayComparison = timeOfDay;
-            }
-        }*/
-
-        public void updateBackground(){
-
-
-        }
-
-        public void onSurfaceRedrawNeeded(SurfaceHolder holder){
-
-        };
 
         @Override
         public void onInterruptionFilterChanged(int interruptionFilter) {
@@ -376,7 +298,7 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
             // Scale everything
             scaleHandLengths();
             scaleAndAssignBackgroundWallpaper();
-            scaleTeamLeaderIcon(pkmnTeamLeadBitmap);
+            /*scaleTeamLeaderIcon(pkmnTeamLeadBitmap);*/
             scaleSecondsHandIcon(secondsHandIconBitmap);
 
         }
@@ -405,7 +327,7 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
 
         }
 
-        private void scaleTeamLeaderIcon(Bitmap bitmap) {
+        /*private void scaleTeamLeaderIcon(Bitmap bitmap) {
             ldrResizePercentageWidth = (((float) bitmap.getWidth() * 2f)
                     / 326f);
             ldrResizePercentageHeight = (((float) bitmap.getHeight() * 2f)
@@ -424,7 +346,7 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
                             * ldrIconBitmapHeightScaler)
                     , true);
 
-        }
+        }*/
 
         private void scaleSecondsHandIcon(Bitmap bitmap) {
             resizePercentageWidth = (((float) bitmap.getWidth() * 2f)
@@ -454,7 +376,7 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
             mCalendar.setTimeInMillis(now);
             drawBackground(canvas);
             drawWatchFace(canvas);
-            drawPokemon(canvas);
+            /*drawPokemon(canvas);*/
         }
 
         private void drawBackground(Canvas canvas) {
@@ -471,8 +393,8 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
             // Rotation degrees per unit of time
             final float seconds =
                     (mCalendar.get(Calendar.SECOND)
-                    + mCalendar.get(Calendar.MILLISECOND)
-                    / 1000f);
+                            + mCalendar.get(Calendar.MILLISECOND)
+                            / 1000f);
 
             final float secondsRotation = seconds * 6f;
 
@@ -525,25 +447,6 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
             canvas.restore();
         }
 
-        private void drawPokemon(Canvas canvas){
-
-            //TODO
-            // variable containing random xy position for draw
-            // within a confined space that is initial position
-            // of where the pokemon spawns
-
-            //TODO
-            // animation procedures for overworld
-            // sprites once drawn
-
-            //spawn
-            if(!mAmbient) {
-                canvas.drawBitmap(pkmnTeamLeadBitmap,
-                        mCenterY - (secondsHandIconBitmap.getWidth() / 2),
-                        mCenterY - mSecondHandLength,
-                        pkmnTeamLeadPaint);
-            }
-        }
 
         @Override
         public void onVisibilityChanged(boolean visible) {
@@ -568,7 +471,7 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
             }
             mRegisteredTimeZoneReceiver = true;
             IntentFilter filter = new IntentFilter(Intent.ACTION_TIMEZONE_CHANGED);
-            dialgaWatchFace.this.registerReceiver(mTimeZoneReceiver, filter);
+            dialgaWatchFaceService.this.registerReceiver(mTimeZoneReceiver, filter);
         }
 
         private void unregisterReceiver() {
@@ -576,7 +479,7 @@ public class dialgaWatchFace extends CanvasWatchFaceService {
                 return;
             }
             mRegisteredTimeZoneReceiver = false;
-            dialgaWatchFace.this.unregisterReceiver(mTimeZoneReceiver);
+            dialgaWatchFaceService.this.unregisterReceiver(mTimeZoneReceiver);
         }
 
         // Starts or stops the timer based on the state of the watch face
