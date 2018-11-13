@@ -29,10 +29,10 @@
                 android:resource="@xml/watch_face" />
             <meta-data
                 android:name="com.google.android.wearable.watchface.preview"
-                android:resource="@drawable/pokemon_park_dawn_wallpaper" />
+                android:resource="@drawable/dawn" />
             <meta-data
                 android:name="com.google.android.wearable.watchface.preview_circular"
-                android:resource="@drawable/pokemon_park_dawn_wallpaper" />
+                android:resource="@drawable/dawn" />
 
             <!--
                 <meta-data

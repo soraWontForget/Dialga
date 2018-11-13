@@ -13,6 +13,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.wearable.CapabilityClient;
 import com.google.android.gms.wearable.DataClient;
+import com.google.android.gms.wearable.DataEvent;
+import com.google.android.gms.wearable.DataEventBuffer;
 import com.google.android.gms.wearable.DataItem;
 import com.google.android.gms.wearable.DataItemAsset;
 import com.google.android.gms.wearable.MessageClient;
@@ -37,6 +39,7 @@ public class Main2Activity extends Activity/*
 
     */
     private static final String SECOND_HAND_CONFIG = "/second-hand";
+    private static final String BACKGROUND_CONFIG = "/background";
     String secondHandPokemon;
     String TAG = "Main2Activity";
 
@@ -61,6 +64,8 @@ public class Main2Activity extends Activity/*
                     umbreon();
 
                 } else {
+
+                    espeon();
 
                 }
 
@@ -103,4 +108,5 @@ public class Main2Activity extends Activity/*
 
         });
     }
+
 }
