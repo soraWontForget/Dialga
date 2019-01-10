@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Dialga</string>
     <string name="my_analog_name">Dialga Alpha</string>
-    <string name="resource_raichu">raichu</string>
+    <string name="new_team_confirmation">New Team Set!</string>
+    <string name="config_sent_confirmation">New configuration sent!</string>
 </resources>
