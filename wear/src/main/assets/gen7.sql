@@ -58,9 +58,9 @@ insert into pokemon (dex_number, pokemon_name, generation) values(778, 'mimikyu'
 insert into pokemon (dex_number, pokemon_name, generation) values(779, 'bruxish', 7);
 insert into pokemon (dex_number, pokemon_name, generation) values(780, 'drampa', 7);
 insert into pokemon (dex_number, pokemon_name, generation) values(781, 'dhelmise', 7);
-insert into pokemon (dex_number, pokemon_name, generation) values(782, 'jangmo-o', 7);
-insert into pokemon (dex_number, pokemon_name, generation) values(783, 'hakamo-o', 7);
-insert into pokemon (dex_number, pokemon_name, generation) values(784, 'kommo-o', 7);
+insert into pokemon (dex_number, pokemon_name, generation) values(782, 'jangmoo', 7);
+insert into pokemon (dex_number, pokemon_name, generation) values(783, 'hakamoo', 7);
+insert into pokemon (dex_number, pokemon_name, generation) values(784, 'kommoo', 7);
 insert into pokemon (dex_number, pokemon_name, generation) values(785, 'tapukoko', 7);
 insert into pokemon (dex_number, pokemon_name, generation) values(786, 'tapulele', 7);
 insert into pokemon (dex_number, pokemon_name, generation) values(787, 'tapubulu', 7);
