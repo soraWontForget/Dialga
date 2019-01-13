@@ -6,36 +6,39 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
+import android.support.wearable.watchface.WatchFaceService;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
 
 public class SqliteHelper extends SQLiteOpenHelper {
 
+
     public static final String DATABASE_PATH = "/data/data/xyz.apricorn.sora.dialga/databases/";
-    public static final String DATABASE_NAME = "dialga-pokemon.db";
+    public static final String DATABASE_NAME = "dialga-db.db";
+    public static final String TABLE_NAME_POKEMON = "pokemon";
+    public static final String TABLE_NAME_FORMS = "forms";
     public static final String POKEMON_NAME_COLUMN = "pokemon_name";
+    public static final String POKEMON_HEIGHT_COLUMN = "height";
+    public static final String POKEMON_WEIGHT_COLUMN = "weight";
     public static final String GENERATION_COLUMN = "generation";
     public static final String NATIONAL_DEX_NUMBER_COLUMN = "dex_number";
     public static final String POKEMON_TYPE_COLOUMN = "type";
-    public static final String RESOURCE_COLUMN = "resource";
-    static String data;
+    public static String data;
+    public SQLiteDatabase dialgaDataBase;
     public final Context myContext;
-    public SQLiteDatabase myDataBase;
 
-    public SqliteHelper(Context context){
-        super(context,DATABASE_NAME,null,1);
-        this.myContext = context;
+    public SqliteHelper(Context watchFaceContext){
+        super(watchFaceContext, DATABASE_NAME,null,1);
+        this.myContext = watchFaceContext;
+
     }
 
     public void createDataBase() throws IOException{
 
-        /*boolean dbExist = checkDataBase();*/
-
-        /*if(dbExist){*/
-            //do nothing - database already exist
             this.getReadableDatabase();
 
             try {
@@ -47,24 +50,8 @@ public class SqliteHelper extends SQLiteOpenHelper {
                 throw new Error("Error copying database");
 
             }
-        /*}else{
-
-            //By calling this method and empty database will be created into the default system path
-            //of your application so we are gonna be able to overwrite that database with our database.
-            this.getReadableDatabase();
-*/
-            try {
-
-                copyDataBase();
-
-            } catch (IOException e) {
-
-                throw new Error("Error copying database");
-
 
         }
-
-    }
 
     private boolean checkDataBase(){
 
@@ -117,27 +104,30 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
         //Open the database
         String myPath = DATABASE_PATH + DATABASE_NAME;
-        myDataBase = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
+        dialgaDataBase = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
 
     }
 
     @Override
     public synchronized void close() {
 
-        if(myDataBase != null)
-            myDataBase.close();
+        if(dialgaDataBase != null)
+            dialgaDataBase.close();
 
         super.close();
 
     }
 
-    public void onCreate(SQLiteDatabase db) {}
+    public void onCreate(SQLiteDatabase db) {
+
+    }
     public void onUpgrade(SQLiteDatabase database, int oldVersion, int newVersion) {}
 
-    public String getIcon(int dexNumber){
+    public String getPokemonName(int dexNumber){
         SQLiteDatabase db = this.getReadableDatabase();
-        String query = "SELECT " + POKEMON_NAME_COLUMN + " FROM pokemon WHERE "+ NATIONAL_DEX_NUMBER_COLUMN +
-                "='"+ dexNumber + "'";
+        String query = "SELECT " + POKEMON_NAME_COLUMN + " FROM " + TABLE_NAME_POKEMON
+                + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
+                + " = '"+ dexNumber + "'";
         Cursor init = db.rawQuery(query, null);
         init.moveToFirst();
 
@@ -148,5 +138,90 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
     }
 
+    public int getPokemonHeight(int dexNumber){
+        int height;
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT " + POKEMON_HEIGHT_COLUMN + " FROM "+ TABLE_NAME_POKEMON
+                + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
+                + " = '"+ dexNumber + "'";
+        Cursor init = db.rawQuery(query, null);
+        init.moveToFirst();
+
+        height = Integer.parseInt(init.getString(0));
+
+        init.close();
+        return height;
+
+    }
+
+    public int getPokemonWeight(int dexNumber){
+        int weight;
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT " + POKEMON_WEIGHT_COLUMN + " FROM " + TABLE_NAME_POKEMON
+                + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
+                + " = '"+ dexNumber + "'";
+        Cursor init = db.rawQuery(query, null);
+        init.moveToFirst();
+
+        weight = Integer.parseInt(init.getString(0));
+
+        init.close();
+        return weight;
+
+    }
+
+    public Boolean checkPokemonForm(int dexNumber){
+        Boolean form;
+        int formCheck;
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT " + TABLE_NAME_FORMS + " FROM " + TABLE_NAME_POKEMON
+                + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
+                + " = '"+ dexNumber + "'";
+        Cursor init = db.rawQuery(query, null);
+        init.moveToFirst();
+
+        formCheck = init.getInt(0);
+
+        init.close();
+
+        if(formCheck == 1){
+            form = true;
+        } else {
+            form = false;
+        }
+
+        return form;
+
+    }
+
+    public ArrayList<String> getFormsList(int dexNumber){
+        ArrayList<String> formsList = new ArrayList<>();
+        String form;
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT " + TABLE_NAME_FORMS + " FROM " + TABLE_NAME_POKEMON
+                + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
+                + " = '"+ dexNumber + "'";
+        Cursor init = db.rawQuery(query, null);
+
+        if(init.moveToFirst()) {
+            do
+            {
+
+                form = init.getString(0);
+                formsList.add(form);
+
+            } while (init.moveToNext());
+
+        }
+
+        init.close();
+
+        return formsList;
+
+    }
 
 }

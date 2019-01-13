@@ -1,11 +1,12 @@
 package xyz.apricorn.sora.dialga;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 import java.util.ArrayList;
 
-public class Pokemon extends DialgaWatchFaceService{
+public class Pokemon {
 
 	private String name;
 	private int dexNumber, height, weight;
@@ -13,8 +14,8 @@ public class Pokemon extends DialgaWatchFaceService{
 	private Boolean shiny;
 	private Boolean form;
 
-	Pokemon() {
-		SqliteHelper sql = new SqliteHelper(this);
+	Pokemon(Context context) {
+		SqliteHelper sql = new SqliteHelper(context);
 		RNGRolls rng = new RNGRolls();
 		Breeding breeding = new Breeding();
 
@@ -25,12 +26,12 @@ public class Pokemon extends DialgaWatchFaceService{
 		weight = sql.getPokemonWeight(dexNumber);
         shiny = rng.shinyRoll(breeding.getForeignParent(), breeding.getShinyCharm());
         form = sql.checkPokemonForm(dexNumber);
-        bitmap = setBitmap(name);
+        bitmap = setBitmap(name, context);
 
 	}
 
-	Pokemon(int dexNum) {
-		SqliteHelper sql = new SqliteHelper(this);
+	Pokemon(int dexNum, Context context) {
+		SqliteHelper sql = new SqliteHelper(context);
 		RNGRolls rng = new RNGRolls();
         Breeding breeding = new Breeding();
 
@@ -40,55 +41,62 @@ public class Pokemon extends DialgaWatchFaceService{
 		weight = sql.getPokemonWeight(dexNumber);
 		form = sql.checkPokemonForm(dexNumber);
         shiny = rng.shinyRoll(breeding.getForeignParent(), breeding.getShinyCharm());
-        bitmap = setBitmap(name);
+        bitmap = setBitmap(name, context);
 
 	}
 
-    private Bitmap setBitmap(String name)
+    private Bitmap setBitmap(String name, Context context)
     {
         int resId;
         Bitmap bitties;
-        resId = queryResourceId(name);
+        resId = queryResourceId(name, context);
 
-        bitties = decodeBitmap(resId);
+        bitties = decodeBitmap(resId, context);
 
         return bitties;
 
     }
 
-	private int queryResourceId(String name) {
+	private int queryResourceId(String name, Context context) {
 		int resId;
         String shine, formie;
 
         shine = shiny ? "_shiny" : "";
-        formie = form ? setForm() : "";
+        formie = form ? setForm(context) : "";
 
-		resId = getResources().getIdentifier(name + formie + shine, "drawable", getPackageName());
+		resId = context.getResources().getIdentifier(name + formie + shine, "drawable", context.getPackageName());
 
         return resId;
 
 	}
 
-	private String setForm(){
-	    String returnForm;
-	    SqliteHelper sql = new SqliteHelper(this);
+	private String setForm(Context context){
+	    String returnForm = "";
+	    Boolean hasForms;
+	    SqliteHelper sql = new SqliteHelper(context);
 
 	    ArrayList<String> formsList;
 
-	    formsList = sql.getFormsList(dexNumber);
+	    hasForms = sql.checkPokemonForm(dexNumber);
 
-	    returnForm = formsList.get(0);
+	    if(hasForms)
+	    {
+            formsList = sql.getFormsList(dexNumber);
+            returnForm = formsList.get(0);
+        }
+
 
 	    return returnForm;
 
     }
 
-	private Bitmap decodeBitmap(int resId)
+	private Bitmap decodeBitmap(int resId, Context context)
     {
 
-		bitmap = BitmapFactory.decodeResource(getResources(), resId);
+        Bitmap mBitmap;
+		mBitmap = BitmapFactory.decodeResource(context.getResources(), resId);
 
-		return bitmap;
+		return mBitmap;
 
 	}
 
