@@ -22,10 +22,9 @@ public class RNGRolls {
         int roll;
         int randIndex = 8192;
         int personalityValue = 1;
-        int counter = 1;
+        int counter = 0;
         boolean end = false;
         boolean bShiny = false;
-        String rShiny;
 
         if(shinyCharm){
             randIndex = 4096;

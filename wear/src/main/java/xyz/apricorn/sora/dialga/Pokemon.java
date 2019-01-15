@@ -120,9 +120,21 @@ public class Pokemon {
         return bitmap;
     }
 
-    public void setBitmap(Bitmap bitties)
-    {
-        bitmap = bitties;
-    }
+    public void rerollPokemon(Context context)
+	{
+		SqliteHelper sql = new SqliteHelper(context);
+		RNGRolls rng = new RNGRolls();
+		Breeding breeding = new Breeding();
+
+
+		dexNumber = rng.rollDexNumber();
+		name = sql.getPokemonName(dexNumber);
+		height = sql.getPokemonHeight(dexNumber);
+		weight = sql.getPokemonWeight(dexNumber);
+		shiny = rng.shinyRoll(breeding.getForeignParent(), breeding.getShinyCharm());
+		form = sql.checkPokemonForm(dexNumber);
+		bitmap = setBitmap(name, context);
+
+	}
 
 }

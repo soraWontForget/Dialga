@@ -531,9 +531,9 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
 
         // Scale icon bitmaps to fit wearable's screen.
         private Bitmap scaleSecondsHandIcon(int index/*Bitmap bitmap*/) {
-            resizePercentageWidth = (((float) teamBitmap[index].getWidth() * 2f)
+            resizePercentageWidth = (((float) teamBitmap[index].getWidth() / 2f)
                     / 326f);
-            resizePercentageHeight = (((float) teamBitmap[index].getHeight() * 2f)
+            resizePercentageHeight = (((float) teamBitmap[index].getHeight() / 2f)
                     / 326f);
 
             iconBitmapWidthScaler = ((mCenterX * 2f) * resizePercentageWidth)

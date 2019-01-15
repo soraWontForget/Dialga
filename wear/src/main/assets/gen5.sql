@@ -59,7 +59,7 @@ insert into pokemon (dex_number, pokemon_name, generation, forms) values(551, 's
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(552, 'krokorok', 5, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(553, 'krookodile', 5, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(554, 'darumaka', 5, 0);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(555, 'darmanitan', 5, 0);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(555, 'darmanitan', 5, 1);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(556, 'maractus', 5, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(557, 'dwebble', 5, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(558, 'crustle', 5, 0);
@@ -151,6 +151,6 @@ insert into pokemon (dex_number, pokemon_name, generation, forms) values(643, 'r
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(644, 'zekrom', 5, 1);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(645, 'landorus', 5, 1);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(646, 'kyurem', 5, 1);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(647, 'keldeo', 5, 0);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(647, 'keldeo', 5, 1);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(648, 'meloetta', 5, 1);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(649, 'genesect', 5, 0);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(649, 'genesect', 5, 1);

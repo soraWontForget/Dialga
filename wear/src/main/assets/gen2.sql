@@ -47,7 +47,7 @@ insert into pokemon(dex_number, pokemon_name, generation, forms) values(197, 'um
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(198, 'murkrow', 2, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(199, 'slowking', 2, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(200, 'misdreavus', 2, 0);
-insert into pokemon(dex_number, pokemon_name, generation, forms) values(201, 'unown', 2, 0);
+insert into pokemon(dex_number, pokemon_name, generation, forms) values(201, 'unown', 2, 1);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(202, 'wobbuffet', 2, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(203, 'girafarig', 2, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(204, 'pineco', 2, 0);

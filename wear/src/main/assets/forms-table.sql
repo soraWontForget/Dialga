@@ -1,0 +1,70 @@
+CREATE TABLE forms AS
+SELECT dex_number, pokemon_name
+FROM pokemon
+where forms = 1;
+
+ALTER TABLE forms ADD COLUMN form_name varchar(40);
+
+update forms set form_name = "charizard_mega_x" where dex_number = 6;
+insert into forms(dex_number, pokemon_name, form_name) values(6, "charizard", "charizard_mega_y");
+update forms set form_name = "venusaur_mega" where dex_number = 3;
+update forms set form_name = "blastoise_mega" where dex_number = 9;
+update forms set form_name = "absol_mega" where pokemon_name = "absol";
+update forms set form_name = "aggron_mega" where pokemon_name = "aggron";
+update forms set form_name = "audino_mega" where pokemon_name = "audino";
+update forms set form_name = "gengar_mega" where pokemon_name = "gengar";
+update forms set form_name = "glalie_mega" where pokemon_name = "glalie";
+update forms set form_name = "latias_mega" where pokemon_name = "latias";
+update forms set form_name = "latios_mega" where pokemon_name = "latios";
+update forms set form_name = "mawile_mega" where pokemon_name = "mawile";
+update forms set form_name = "pinsir_mega" where pokemon_name = "pinsir";
+update forms set form_name = "scizor_mega" where pokemon_name = "scizor";
+update forms set form_name = "mewtwo_mega_x" where pokemon_name = "mewtwo";
+insert into forms(dex_number, pokemon_name, form_name) values(150, "mewtwo", "mewtwo_mega_y");
+update forms set form_name = "altaria_mega" where pokemon_name = "altaria";
+update forms set form_name = "banette_mega" where pokemon_name = "banette";
+update forms set form_name = "diancie_mega" where pokemon_name = "diancie";
+update forms set form_name = "gallade_mega" where pokemon_name = "gallade";
+update forms set form_name = "lopunny_mega" where pokemon_name = "lopunny";
+update forms set form_name = "lucario_mega" where pokemon_name = "lucario";
+update forms set form_name = "pidgeot_mega" where pokemon_name = "pidgeot";
+update forms set form_name = "sableye_mega" where pokemon_name = "sableye";
+update forms set form_name = "slowbro_mega" where pokemon_name = "slowbro";
+update forms set form_name = "steelix_mega" where pokemon_name = "steelix";
+update forms set form_name = "alakazam_mega" where pokemon_name = "alakazam";
+update forms set form_name = "ampharos_mega" where pokemon_name = "ampharos";
+update forms set form_name = "beedrill_mega" where pokemon_name = "beedrill";
+update forms set form_name = "blaziken_mega" where pokemon_name = "blaziken";
+update forms set form_name = "camerupt_mega" where pokemon_name = "camerupt";
+update forms set form_name = "garchomp_mega" where pokemon_name = "garchomp";
+update forms set form_name = "gyarados_mega" where pokemon_name = "gyarados";
+update forms set form_name = "houndoom_mega" where pokemon_name = "houndoom";
+update forms set form_name = "medicham_mega" where pokemon_name = "medicham";
+update forms set form_name = "rayquaza_mega" where pokemon_name = "rayquaza";
+update forms set form_name = "sceptile_mega" where pokemon_name = "sceptile";
+update forms set form_name = "sharpedo_mega" where pokemon_name = "sharpedo";
+update forms set form_name = "swampert_mega" where pokemon_name = "swampert";
+update forms set form_name = "abomasnow_mega" where pokemon_name = "abomasnow";
+update forms set form_name = "gardevoir_mega" where pokemon_name = "gardevoir";
+update forms set form_name = "heracross_mega" where pokemon_name = "heracross";
+update forms set form_name = "manectric_mega" where pokemon_name = "manectric";
+update forms set form_name = "metagross_mega" where pokemon_name = "metagross";
+update forms set form_name = "salamence_mega" where pokemon_name = "salamence";
+update forms set form_name = "tyranitar_mega" where pokemon_name = "tyranitar";
+update forms set form_name = "aerodactyl_mega" where pokemon_name = "aerodactyl";
+update forms set form_name = "kangaskhan_mega" where pokemon_name = "kangaskhan";
+update forms set form_name = "pikachu_unova_cap" where dex_number = 25;
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_alola_cap");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_belle");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_cosplay");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_hoenn_cap");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_kalos_cap");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_libre_cap");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_original_cap");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_partner_cap");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_phd");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_popstar");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_rockstar");
+insert into forms(dex_number, pokemon_name, form_name) values(25, "pikachu", "pikachu_sinnoh_cap");
+update forms set form_name = "unown" where dex_number = 201;
+insert into forms(dex_number, pokemon_name, form_name) values(201, "unown", "unown_b")

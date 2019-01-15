@@ -23,8 +23,8 @@ insert into pokemon (dex_number, pokemon_name, generation, forms) values(408, 'c
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(409, 'rampardos', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(410, 'shieldon', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(411, 'bastiodon', 4, 0);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(412, 'burmy', 4, 0);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(413, 'wormadam', 4, 0);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(412, 'burmy', 4, 1);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(413, 'wormadam', 4, 1);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(414, 'mothim', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(415, 'combee', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(416, 'vespiquen', 4, 0);
@@ -32,9 +32,9 @@ insert into pokemon (dex_number, pokemon_name, generation, forms) values(417, 'p
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(418, 'buizel', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(419, 'floatzel', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(420, 'cherubi', 4, 0);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(421, 'cherrim', 4, 0);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(422, 'shellos', 4, 0);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(423, 'gastrodon', 4, 0);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(421, 'cherrim', 4, 1);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(422, 'shellos', 4, 1);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(423, 'gastrodon', 4, 1);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(424, 'ambipom', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(425, 'drifloon', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(426, 'drifblim', 4, 0);
@@ -98,10 +98,10 @@ insert into pokemon (dex_number, pokemon_name, generation, forms) values(483, 'd
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(484, 'palkia', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(485, 'heatran', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(486, 'regigigas', 4, 0);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(487, 'giratina', 4, 0);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(487, 'giratina', 4, 1);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(488, 'cresselia', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(489, 'phione', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(490, 'manaphy', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(491, 'darkrai', 4, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(492, 'shaymin', 4, 1);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(493, 'arceus', 4, 0);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(493, 'arceus', 4, 1);

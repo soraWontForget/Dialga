@@ -6,7 +6,7 @@ insert into pokemon(dex_number, pokemon_name, generation, forms) values(654, 'br
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(655, 'delphox', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(656, 'froakie', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(657, 'frogadier', 6, 0);
-insert into pokemon(dex_number, pokemon_name, generation, forms) values(658, 'greninja', 6, 0);
+insert into pokemon(dex_number, pokemon_name, generation, forms) values(658, 'greninja', 6, 1);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(659, 'bunnelby', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(660, 'diggersby', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(661, 'fletchling', 6, 0);
@@ -24,7 +24,7 @@ insert into pokemon(dex_number, pokemon_name, generation, forms) values(672, 'sk
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(673, 'gogoat', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(674, 'pancham', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(675, 'pangoro', 6, 0);
-insert into pokemon(dex_number, pokemon_name, generation, forms) values(676, 'furfrou', 6, 0);
+insert into pokemon(dex_number, pokemon_name, generation, forms) values(676, 'furfrou', 6, 1);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(677, 'espurr', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(678, 'meowstic', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(679, 'honedge', 6, 0);
@@ -58,7 +58,7 @@ insert into pokemon(dex_number, pokemon_name, generation, forms) values(706, 'go
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(707, 'klefki', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(708, 'phantump', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(709, 'trevenant', 6, 0);
-insert into pokemon(dex_number, pokemon_name, generation, forms) values(710, 'pumpkaboo', 6, 0);
+insert into pokemon(dex_number, pokemon_name, generation, forms) values(710, 'pumpkaboo', 6, 1);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(711, 'gourgeist', 6, 1);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(712, 'bergmite', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(713, 'avalugg', 6, 0);
@@ -66,7 +66,7 @@ insert into pokemon(dex_number, pokemon_name, generation, forms) values(714, 'no
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(715, 'noivern', 6, 0);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(716, 'xerneas', 6, 1);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(717, 'yveltal', 6, 0);
-insert into pokemon(dex_number, pokemon_name, generation, forms) values(718, 'zygarde', 6, 0);
+insert into pokemon(dex_number, pokemon_name, generation, forms) values(718, 'zygarde', 6, 1);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(719, 'diancie', 6, 1);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(720, 'hoopa', 6, 1);
 insert into pokemon(dex_number, pokemon_name, generation, forms) values(721, 'volcanion', 6, 0);

@@ -59,4 +59,14 @@ public class PokemonTeam {
 
     }
 
+    public void rerollTeam(Context context)
+    {
+        teamLead.rerollPokemon(context);
+        slot2.rerollPokemon(context);
+        slot3.rerollPokemon(context);
+        slot4.rerollPokemon(context);
+        slot5.rerollPokemon(context);
+        slot6.rerollPokemon(context);
+    }
+
 }

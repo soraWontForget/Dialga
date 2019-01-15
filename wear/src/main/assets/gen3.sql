@@ -97,7 +97,7 @@ insert into pokemon (dex_number, pokemon_name, generation, forms) values(347, 'a
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(348, 'armaldo', 3, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(349, 'feebas', 3, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(350, 'milotic', 3, 0);
-insert into pokemon (dex_number, pokemon_name, generation, forms) values(351, 'castform', 3, 0);
+insert into pokemon (dex_number, pokemon_name, generation, forms) values(351, 'castform', 3, 1);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(352, 'kecleon', 3, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(353, 'shuppet', 3, 0);
 insert into pokemon (dex_number, pokemon_name, generation, forms) values(354, 'banette', 3, 1);

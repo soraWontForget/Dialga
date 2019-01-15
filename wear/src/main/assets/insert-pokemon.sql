@@ -8,5 +8,6 @@ create table pokemon(dex_number int(3) PRIMARY KEY, pokemon_name varchar(14), ge
 .read gen5.sql
 .read gen6.sql
 .read gen7.sql
-.read hw-ins.sql
-
+.read pk-height.sql
+.read pk-weig.sql
+.read forms-table.sql
