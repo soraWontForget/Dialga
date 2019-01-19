@@ -49,6 +49,7 @@ public class PokemonTeam {
 
             case 5:
                 bitties = slot6.getBitmap();
+                break;
 
             default:
                 bitties = teamLead.getBitmap();
