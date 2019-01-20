@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -14,6 +15,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 /*import android.support.v7.graphics.Palette;*/
+import android.support.v7.graphics.Palette;
 import android.support.wearable.watchface.CanvasWatchFaceService;
 import android.support.wearable.watchface.WatchFaceService;
 import android.support.wearable.watchface.WatchFaceStyle;
@@ -24,7 +26,9 @@ import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 import xyz.apricorn.sora.dialga.PokemonTeam;
@@ -164,6 +168,8 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
         private Paint mHourPaint;
         private Paint mMinutePaint;
         private Paint mTickAndCirclePaint;
+        private int mWatchHandColor;
+        private int mWatchHandShadowColor;
         private boolean mAmbient;
 
         Random rand = new Random();
@@ -176,20 +182,25 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
             SqliteHelper databaseHelper;
             databaseHelper = new SqliteHelper(DialgaWatchFaceService.this);
 
+
+
             /*DialgaWatchFaceService.this*/
 
             // Create the database on the wearable from database in apk's assets.
             try {
                 databaseHelper.createDataBase();
+                databaseHelper.close();
             } catch (IOException ioe) {
                 throw new Error("Unable to create database");
             }
 
             mCalendar = Calendar.getInstance();
 
+
             // Initialize everything.
-            initializeBackground();
+
             initializeWatchFace();
+            initializeBackground();
 
 
             setWatchFaceStyle(new WatchFaceStyle.Builder(DialgaWatchFaceService.this)
@@ -213,6 +224,7 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
             mBackgroundArray[2] = BitmapFactory.decodeResource(getResources(), twilight);
             mBackgroundArray[3] = BitmapFactory.decodeResource(getResources(), night);
 
+            generatePalette(mBackgroundArray[newIndex]);
             // Initialize background paint object.
             mBackgroundPaint = new Paint();
             mBackgroundPaint.setColor(Color.BLACK);
@@ -221,7 +233,11 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
             setTimeOfDay();
 
             /* Extracts colors from background image to improve watchface style. */
-            /*Palette.from(mBackgroundBitmap).generate(new Palette.PaletteAsyncListener() {
+
+        }
+
+        private void generatePalette(Bitmap sourceBitmap){
+            Palette.from(sourceBitmap).generate(new Palette.PaletteAsyncListener() {
                 @Override
                 public void onGenerated(Palette palette) {
                     if (palette != null) {
@@ -230,9 +246,8 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
                         updateWatchHandStyle();
                     }
                 }
-            });*/
+            });
         }
-
         // Sets the timeOfDay variable based on the current time of day. Return an integer that
         // corresponds to an element's index stored in the backgrounds array.
         private void setTimeOfDay() {
@@ -274,17 +289,20 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
             /*hello = new Paint();*/
 
             // Sets the hands to colors that are more visible depending on the background.
-            if (timeOfDay < 2) {
-                mHourPaint.setColor(Color.BLACK);
+            /*if (timeOfDay < 2) {*/
+                /*mHourPaint.setColor(Color.BLACK);
                 mMinutePaint.setColor(Color.BLACK);
-                mTickAndCirclePaint.setColor(Color.BLACK);
+                mTickAndCirclePaint.setColor(Color.BLACK);*/
+                mHourPaint.setColor(mWatchHandColor);
+                mMinutePaint.setColor(mWatchHandColor);
+                mTickAndCirclePaint.setColor(mWatchHandColor);
                 /*hello.setColor(Color.BLACK);*/
-            } else {
-                mHourPaint.setColor(Color.WHITE);
+            /*} else {*/
+              /*  mHourPaint.setColor(Color.WHITE);
                 mMinutePaint.setColor(Color.WHITE);
-                mTickAndCirclePaint.setColor(Color.WHITE);
+                mTickAndCirclePaint.setColor(Color.WHITE);*/
                 /*hello.setColor(Color.WHITE);*/
-            }
+            /*}*/
 
             // For displaying date on watchface
             /*hello.setStrokeWidth(MINUTE_STROKE_WIDTH);
@@ -294,19 +312,19 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
             hello.setAntiAlias(true);
             hello.setTextSize(16);*/
 
-            mHourPaint = new Paint();
+            /*mHourPaint = new Paint();*/
             mHourPaint.setStrokeWidth(HOUR_STROKE_WIDTH);
             mHourPaint.setAntiAlias(true);
             mHourPaint.setStrokeCap(Paint.Cap.ROUND);
             mHourPaint.setFilterBitmap(true);
 
-            mMinutePaint = new Paint();
+            /*mMinutePaint = new Paint();*/
             mMinutePaint.setStrokeWidth(MINUTE_STROKE_WIDTH);
             mMinutePaint.setAntiAlias(true);
             mMinutePaint.setStrokeCap(Paint.Cap.ROUND);
             mMinutePaint.setFilterBitmap(true);
 
-            mTickAndCirclePaint = new Paint();
+            /*mTickAndCirclePaint = new Paint();*/
             mTickAndCirclePaint.setStrokeWidth(SECOND_TICK_STROKE_WIDTH);
             mTickAndCirclePaint.setAntiAlias(true);
             mTickAndCirclePaint.setStyle(Paint.Style.STROKE);
@@ -325,8 +343,6 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
         private void setTeam() {
             Context context = DialgaWatchFaceService.this;
             PokemonTeam pkmnTeam = new PokemonTeam(context);
-            String name;
-            int resId;
 
             // Sets a team of six pokemon to display for the seconds hand
             for (int i = 0; i < 6; i++) {
@@ -398,7 +414,9 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
 
             }
 
-
+            /*generatePalette(mBackgroundArray[newIndex]);
+            updateWatchHandStyle();*/
+            invalidate();
             // Store the new index for comparison in the next roll.
             oldIndex = newIndex;
 
@@ -430,15 +448,15 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
 
                 // While not in ambient mode, set hands colors based on the background for better
                 // visibility.
-                if (timeOfDay < 2) {
-                    mHourPaint.setColor(Color.BLACK);
-                    mMinutePaint.setColor(Color.BLACK);
-                    mTickAndCirclePaint.setColor(Color.BLACK);
-                } else {
+                /*if (timeOfDay < 2) {*/
+                    mHourPaint.setColor(mWatchHandColor);
+                    mMinutePaint.setColor(mWatchHandColor);
+                    mTickAndCirclePaint.setColor(mWatchHandColor);
+                /*} else {
                     mHourPaint.setColor(Color.WHITE);
                     mMinutePaint.setColor(Color.WHITE);
                     mTickAndCirclePaint.setColor(Color.WHITE);
-                }
+                }*/
 
                 mHourPaint.setAntiAlias(true);
                 mMinutePaint.setAntiAlias(true);
