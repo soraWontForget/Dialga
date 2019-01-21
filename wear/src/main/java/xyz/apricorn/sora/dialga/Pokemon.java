@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Pokemon {
 
@@ -30,12 +31,13 @@ public class Pokemon {
 
 	}
 
-	Pokemon(int dexNum, Context context) {
+	Pokemon(Context context, int dexNum) {
 		SqliteHelper sql = new SqliteHelper(context);
 		RNGRolls rng = new RNGRolls();
         Breeding breeding = new Breeding();
 
 		dexNumber = dexNum;
+
 		name = sql.getPokemonName(dexNumber);
 		height = sql.getPokemonHeight(dexNumber);
 		weight = sql.getPokemonWeight(dexNumber);
@@ -57,6 +59,7 @@ public class Pokemon {
 
     }
 
+
 	private int queryResourceId(String name, Context context) {
 		int resId;
         String shine, formie;
@@ -70,26 +73,36 @@ public class Pokemon {
 
 	}
 
+	// Returns the form of a pokemon from a list of that pokemon's form(s)
 	private String setForm(Context context){
-	    String returnForm = "";
-	    Boolean hasForms;
+	    String returnForm;
+	    /*Boolean hasForms;*/
+		int index;
 	    SqliteHelper sql = new SqliteHelper(context);
+	    Random random = new Random();
 
 	    ArrayList<String> formsList;
 
-	    hasForms = sql.checkPokemonForm(dexNumber);
+	    /*hasForms = sql.checkPokemonForm(dexNumber);*/
 
-	    if(hasForms)
-	    {
+	    /*if(hasForms)
+	    {*/
             formsList = sql.getFormsList(dexNumber);
-            returnForm = formsList.get(0);
-        }
 
+			index = formsList.size() - 1;
+
+            if (index > 0) {
+				index = random.nextInt(index);
+			}
+
+			returnForm = formsList.get(index);
+        /*}*/
 
 	    return returnForm;
 
     }
 
+    //
 	private Bitmap decodeBitmap(int resId, Context context)
     {
 
@@ -126,13 +139,14 @@ public class Pokemon {
 		RNGRolls rng = new RNGRolls();
 		Breeding breeding = new Breeding();
 
-
 		dexNumber = rng.rollDexNumber();
 		name = sql.getPokemonName(dexNumber);
 		height = sql.getPokemonHeight(dexNumber);
 		weight = sql.getPokemonWeight(dexNumber);
 		shiny = rng.shinyRoll(breeding.getForeignParent(), breeding.getShinyCharm());
 		form = sql.checkPokemonForm(dexNumber);
+
+		bitmap.recycle();
 		bitmap = setBitmap(name, context);
 
 	}

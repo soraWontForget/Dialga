@@ -4,7 +4,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -26,14 +25,9 @@ import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-import java.util.Map;
 import java.util.Random;
-import java.util.Set;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
-import xyz.apricorn.sora.dialga.PokemonTeam;
-
-
 
 
 public class DialgaWatchFaceService extends CanvasWatchFaceService {
@@ -83,8 +77,6 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
         private static final float SECOND_TICK_STROKE_WIDTH = 2f;
         private static final float CENTER_GAP_AND_CIRCLE_RADIUS = 4f;
         /*private static final int SHADOW_RADIUS = 6;*/
-        public final Context dialgaContext = DialgaWatchFaceService.this;
-
 
         /* Handler to update the time once a second in interactive mode. */
         private final Handler mUpdateTimeHandler = new EngineHandler(this);
@@ -106,8 +98,7 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
                 @TapType int tapType, int x, int y, long eventTime) {
             switch (tapType) {
                 case WatchFaceService.TAP_TYPE_TAP:
-                    setTeam();
-                    scaleSecondsHandArray();
+                    rerollPkmnTeam.run();
                     Toast.makeText(DialgaWatchFaceService.this, R.string.new_team_confirmation, Toast.LENGTH_SHORT).show();
                     break;
 
@@ -140,14 +131,9 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
         private float iconBitmapWidthScaler;
         private float iconBitmapHeightScaler;
 
-        // SQLite
-        private String name;
-
         // Date Paint
-        /*private Paint hello;*/
 
         // Seconds hand
-        /*private Bitmap secondHandOutlineBitmap;*/
         private Bitmap[] teamBitmap = new Bitmap[6];
         /*private String[] pkmnWalk = new String[2];*/
         /*private Bitmap[] pkmnWalkBitmap = new Bitmap[2];*/
@@ -173,6 +159,7 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
         private boolean mAmbient;
 
         Random rand = new Random();
+        PokemonTeam pkmnTeam = new PokemonTeam(DialgaWatchFaceService.this);
 
         @Override
         public void onCreate(SurfaceHolder holder) {
@@ -278,7 +265,7 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
         }
 
         private void initializeWatchFace() {
-            setTeam();
+            setTeamBitmap();
             /*setPkmnWalk();*/
 
             /* Set defaults for colors */
@@ -340,9 +327,20 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
 
         }
 
-        private void setTeam() {
+        // Asynchronously reroll the new teeam
+        private Runnable rerollPkmnTeam = new Runnable(){
+            public void run(){
+                pkmnTeam.rerollTeam(DialgaWatchFaceService.this);
+                setTeamBitmap();
+                scaleSecondsHandArray();
+
+            }
+
+        };
+
+        private void setTeamBitmap() {
             Context context = DialgaWatchFaceService.this;
-            PokemonTeam pkmnTeam = new PokemonTeam(context);
+            /*PokemonTeam pkmnTeam = new PokemonTeam(context);*/
 
             // Sets a team of six pokemon to display for the seconds hand
             for (int i = 0; i < 6; i++) {

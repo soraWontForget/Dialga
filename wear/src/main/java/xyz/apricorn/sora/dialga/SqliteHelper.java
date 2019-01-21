@@ -21,7 +21,11 @@ public class SqliteHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "dialga-db.db";
     public static final String TABLE_NAME_POKEMON = "pokemon";
     public static final String TABLE_NAME_FORMS = "forms";
+    private static final String COLUMN_NAME_FORMS = "forms";
+    public static final String COLUMN_NAME_FORM_NAME = "form_name";
+    public static final String COLUMN_NAME_RETURN_STRING = "return_string";
     public static final String POKEMON_NAME_COLUMN = "pokemon_name";
+    public static final String RETURN_STRING_COLUMN = "return_string";
     public static final String POKEMON_HEIGHT_COLUMN = "height";
     public static final String POKEMON_WEIGHT_COLUMN = "weight";
     public static final String GENERATION_COLUMN = "generation";
@@ -177,7 +181,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
         int formCheck;
 
         SQLiteDatabase db = this.getReadableDatabase();
-        String query = "SELECT " + TABLE_NAME_FORMS + " FROM " + TABLE_NAME_POKEMON
+        String query = "SELECT " + COLUMN_NAME_FORMS + " FROM " + TABLE_NAME_POKEMON
                 + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
                 + " = '"+ dexNumber + "'";
         Cursor init = db.rawQuery(query, null);
@@ -202,21 +206,22 @@ public class SqliteHelper extends SQLiteOpenHelper {
         String form;
 
         SQLiteDatabase db = this.getReadableDatabase();
-        String query = "SELECT " + TABLE_NAME_FORMS + " FROM " + TABLE_NAME_POKEMON
+        String query = "SELECT " + COLUMN_NAME_RETURN_STRING + " FROM " + TABLE_NAME_FORMS
                 + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
                 + " = '"+ dexNumber + "'";
         Cursor init = db.rawQuery(query, null);
+        init.moveToFirst();
 
-        if(init.moveToFirst()) {
-            do
-            {
+        do
+        {
 
-                form = init.getString(0);
-                formsList.add(form);
+            form = init.getString(0);
+            formsList.add(form);
+            init.moveToNext();
 
-            } while (init.moveToNext());
+        } while (init.moveToNext());
 
-        }
+
 
         init.close();
 

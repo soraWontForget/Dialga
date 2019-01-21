@@ -23,6 +23,16 @@ public class PokemonTeam {
 
     }
 
+    PokemonTeam(Context context, int dexNumber){
+        teamLead = new Pokemon(context, dexNumber);
+        slot2 = new Pokemon(context);
+        slot3 = new Pokemon(context);
+        slot4 = new Pokemon(context);
+        slot5 = new Pokemon(context);
+        slot6 = new Pokemon(context);
+
+    }
+
     public Bitmap getPokemonBitmap(int slot)
     {
         Bitmap bitties;
