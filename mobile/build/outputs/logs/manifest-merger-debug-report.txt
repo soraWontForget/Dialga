@@ -1,0 +1,228 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.android.support:wearable:2.3.0] /home/sora/.gradle/caches/transforms-1/files-1.1/wearable-2.3.0.aar/76023110d60b05139972bb9cd9c6346e/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-wearable:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-wearable-16.0.1.aar/3dddaa0f640101e765bb9bb4e50a7e70/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7d1d7c3487ba5c4fb310b704189c2be4/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/a85324b75290dceff7717309ce895b64/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8ddf29cf8c0adc5c2af6551696b6e3f2/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/068ffc4f88a8e644f68dedd9a45d68e6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/6c3a24d6e368f72350592e5dadf2415e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/sora/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9198fe0282ba03165553fd39d91afc2c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:percent:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/percent-26.0.2.aar/0000dcfd863c3fbb9d7abdd5af6c314f/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.2.aar/4f91dbe5c6fab48afefe96c8b09bbc4c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/74d38c0acb18450513ed5a6c878c40e4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/39f858fe148d6bf1de4692f97b05cb4e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/3cdcf67de25a59b3cc23799fb4ea19e8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/eb0b34157b0c6d1eafed30a1105a8d90/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/960dea006ad6946e271023689cd9b0a4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/4a808ccf272fcdb56a1d86ec8e39826f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c7d99c0c85db7da2358977ff0c9bbc7e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9d5ee492e592c64311012ddf02d383cc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/68b549df33c05dce0c50ebe63544eef0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e50d9c5cba7a1b5a74a2c6fef7ae9bf4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/01795de709416df8c4938950435a036e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/d708acbf14decbdb2a90cf1ac54c1fdd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/aacbea4a23373f2e23c38671bcc0c03d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/bb11d978007e72541694e9c4ad9bfa82/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1fc930f89f4e24c12e6014c332a18af0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7298bb7322eaf67482a87916af687a30/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/0f2e5253582f2a3494eec19501640a9d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fd1784ed8ce62ed308b0c951d93558d2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/8f51c600d04192940efe8c4d794dc29a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c03bbf53c48cb38acce644d96669e2e6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/65ad24e8d33c58ffdb847852d978dd1f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/cd381cda2ecfc72a9166c33c5f09b174/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f92174d20dcca9b40d0f67405d12efd4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f434f3e87e4fce6ef1bda0efd66fbab9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e36c3b90fb4866c7031827f7f41acb05/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/d8d62e6ced91dfd1bbcb5e09231de453/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:4:5-39
+		INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+		INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:6:22-65
+uses-permission#com.google.android.wearable.permission.RECEIVE_COMPLICATION_DATA
+ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:7:5-104
+	android:name
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:7:22-101
+application
+ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:9:5-22:19
+MERGED from [com.google.android.support:wearable:2.3.0] /home/sora/.gradle/caches/transforms-1/files-1.1/wearable-2.3.0.aar/76023110d60b05139972bb9cd9c6346e/AndroidManifest.xml:9:5-13:19
+MERGED from [com.google.android.support:wearable:2.3.0] /home/sora/.gradle/caches/transforms-1/files-1.1/wearable-2.3.0.aar/76023110d60b05139972bb9cd9c6346e/AndroidManifest.xml:9:5-13:19
+MERGED from [com.google.android.gms:play-services-wearable:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-wearable-16.0.1.aar/3dddaa0f640101e765bb9bb4e50a7e70/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-wearable:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-wearable-16.0.1.aar/3dddaa0f640101e765bb9bb4e50a7e70/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7d1d7c3487ba5c4fb310b704189c2be4/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7d1d7c3487ba5c4fb310b704189c2be4/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/a85324b75290dceff7717309ce895b64/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/a85324b75290dceff7717309ce895b64/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8ddf29cf8c0adc5c2af6551696b6e3f2/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8ddf29cf8c0adc5c2af6551696b6e3f2/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/sora/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9198fe0282ba03165553fd39d91afc2c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/sora/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9198fe0282ba03165553fd39d91afc2c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:percent:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/percent-26.0.2.aar/0000dcfd863c3fbb9d7abdd5af6c314f/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:percent:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/percent-26.0.2.aar/0000dcfd863c3fbb9d7abdd5af6c314f/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.2.aar/4f91dbe5c6fab48afefe96c8b09bbc4c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.2.aar/4f91dbe5c6fab48afefe96c8b09bbc4c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-compat:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1fc930f89f4e24c12e6014c332a18af0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1fc930f89f4e24c12e6014c332a18af0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7298bb7322eaf67482a87916af687a30/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7298bb7322eaf67482a87916af687a30/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1fc930f89f4e24c12e6014c332a18af0/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:15:9-40
+meta-data#com.google.android.gms.version
+ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:16:9-19:45
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8ddf29cf8c0adc5c2af6551696b6e3f2/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8ddf29cf8c0adc5c2af6551696b6e3f2/AndroidManifest.xml:23:9-25:69
+	tools:replace
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:19:13-42
+	android:value
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:18:13-37
+		REJECTED from [com.google.android.gms:play-services-basement:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8ddf29cf8c0adc5c2af6551696b6e3f2/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:17:13-58
+activity#xyz.apricorn.sora.mobile.MainActivity
+ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:21:9-59
+	android:name
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml:21:19-47
+uses-sdk
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+MERGED from [com.google.android.support:wearable:2.3.0] /home/sora/.gradle/caches/transforms-1/files-1.1/wearable-2.3.0.aar/76023110d60b05139972bb9cd9c6346e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.support:wearable:2.3.0] /home/sora/.gradle/caches/transforms-1/files-1.1/wearable-2.3.0.aar/76023110d60b05139972bb9cd9c6346e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-wearable:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-wearable-16.0.1.aar/3dddaa0f640101e765bb9bb4e50a7e70/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wearable:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-wearable-16.0.1.aar/3dddaa0f640101e765bb9bb4e50a7e70/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7d1d7c3487ba5c4fb310b704189c2be4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7d1d7c3487ba5c4fb310b704189c2be4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/a85324b75290dceff7717309ce895b64/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/a85324b75290dceff7717309ce895b64/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8ddf29cf8c0adc5c2af6551696b6e3f2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/8ddf29cf8c0adc5c2af6551696b6e3f2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/068ffc4f88a8e644f68dedd9a45d68e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/068ffc4f88a8e644f68dedd9a45d68e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/6c3a24d6e368f72350592e5dadf2415e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/6c3a24d6e368f72350592e5dadf2415e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/sora/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9198fe0282ba03165553fd39d91afc2c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/sora/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9198fe0282ba03165553fd39d91afc2c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:percent:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/percent-26.0.2.aar/0000dcfd863c3fbb9d7abdd5af6c314f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:percent:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/percent-26.0.2.aar/0000dcfd863c3fbb9d7abdd5af6c314f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.2.aar/4f91dbe5c6fab48afefe96c8b09bbc4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.2.aar/4f91dbe5c6fab48afefe96c8b09bbc4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/74d38c0acb18450513ed5a6c878c40e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/74d38c0acb18450513ed5a6c878c40e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/39f858fe148d6bf1de4692f97b05cb4e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/39f858fe148d6bf1de4692f97b05cb4e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/3cdcf67de25a59b3cc23799fb4ea19e8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/3cdcf67de25a59b3cc23799fb4ea19e8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/eb0b34157b0c6d1eafed30a1105a8d90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/eb0b34157b0c6d1eafed30a1105a8d90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/960dea006ad6946e271023689cd9b0a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/960dea006ad6946e271023689cd9b0a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/4a808ccf272fcdb56a1d86ec8e39826f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/4a808ccf272fcdb56a1d86ec8e39826f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c7d99c0c85db7da2358977ff0c9bbc7e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/c7d99c0c85db7da2358977ff0c9bbc7e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9d5ee492e592c64311012ddf02d383cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9d5ee492e592c64311012ddf02d383cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/68b549df33c05dce0c50ebe63544eef0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/68b549df33c05dce0c50ebe63544eef0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e50d9c5cba7a1b5a74a2c6fef7ae9bf4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e50d9c5cba7a1b5a74a2c6fef7ae9bf4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/01795de709416df8c4938950435a036e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/01795de709416df8c4938950435a036e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/d708acbf14decbdb2a90cf1ac54c1fdd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/d708acbf14decbdb2a90cf1ac54c1fdd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/aacbea4a23373f2e23c38671bcc0c03d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/aacbea4a23373f2e23c38671bcc0c03d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/bb11d978007e72541694e9c4ad9bfa82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/bb11d978007e72541694e9c4ad9bfa82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1fc930f89f4e24c12e6014c332a18af0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1fc930f89f4e24c12e6014c332a18af0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7298bb7322eaf67482a87916af687a30/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/7298bb7322eaf67482a87916af687a30/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/0f2e5253582f2a3494eec19501640a9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/0f2e5253582f2a3494eec19501640a9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fd1784ed8ce62ed308b0c951d93558d2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fd1784ed8ce62ed308b0c951d93558d2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/8f51c600d04192940efe8c4d794dc29a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/8f51c600d04192940efe8c4d794dc29a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c03bbf53c48cb38acce644d96669e2e6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c03bbf53c48cb38acce644d96669e2e6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/65ad24e8d33c58ffdb847852d978dd1f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/65ad24e8d33c58ffdb847852d978dd1f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/cd381cda2ecfc72a9166c33c5f09b174/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/cd381cda2ecfc72a9166c33c5f09b174/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f92174d20dcca9b40d0f67405d12efd4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f92174d20dcca9b40d0f67405d12efd4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f434f3e87e4fce6ef1bda0efd66fbab9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f434f3e87e4fce6ef1bda0efd66fbab9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e36c3b90fb4866c7031827f7f41acb05/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/sora/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e36c3b90fb4866c7031827f7f41acb05/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/d8d62e6ced91dfd1bbcb5e09231de453/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/sora/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/d8d62e6ced91dfd1bbcb5e09231de453/AndroidManifest.xml:20:5-44
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+		INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+		ADDED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+		INJECTED from /home/sora/AndroidStudioProjects/Dialga/mobile/src/main/AndroidManifest.xml
+uses-library#com.google.android.wearable
+ADDED from [com.google.android.support:wearable:2.3.0] /home/sora/.gradle/caches/transforms-1/files-1.1/wearable-2.3.0.aar/76023110d60b05139972bb9cd9c6346e/AndroidManifest.xml:10:9-12:40
+	android:required
+		ADDED from [com.google.android.support:wearable:2.3.0] /home/sora/.gradle/caches/transforms-1/files-1.1/wearable-2.3.0.aar/76023110d60b05139972bb9cd9c6346e/AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from [com.google.android.support:wearable:2.3.0] /home/sora/.gradle/caches/transforms-1/files-1.1/wearable-2.3.0.aar/76023110d60b05139972bb9cd9c6346e/AndroidManifest.xml:11:13-55
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7d1d7c3487ba5c4fb310b704189c2be4/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7d1d7c3487ba5c4fb310b704189c2be4/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7d1d7c3487ba5c4fb310b704189c2be4/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/sora/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7d1d7c3487ba5c4fb310b704189c2be4/AndroidManifest.xml:24:13-79
+meta-data#android.support.VERSION
+ADDED from [com.android.support:percent:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/percent-26.0.2.aar/0000dcfd863c3fbb9d7abdd5af6c314f/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.2.aar/4f91dbe5c6fab48afefe96c8b09bbc4c/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.2.aar/4f91dbe5c6fab48afefe96c8b09bbc4c/AndroidManifest.xml:23:9-25:38
+	android:value
+		ADDED from [com.android.support:percent:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/percent-26.0.2.aar/0000dcfd863c3fbb9d7abdd5af6c314f/AndroidManifest.xml:25:13-35
+	android:name
+		ADDED from [com.android.support:percent:26.0.2] /home/sora/.gradle/caches/transforms-1/files-1.1/percent-26.0.2.aar/0000dcfd863c3fbb9d7abdd5af6c314f/AndroidManifest.xml:24:13-51

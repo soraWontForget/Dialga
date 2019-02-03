@@ -25,11 +25,11 @@ public class SqliteHelper extends SQLiteOpenHelper {
     public static final String COLUMN_NAME_FORM_NAME = "form_name";
     public static final String COLUMN_NAME_RETURN_STRING = "return_string";
     public static final String POKEMON_NAME_COLUMN = "pokemon_name";
-    public static final String POKEMON_HEIGHT_COLUMN = "height";
-    public static final String POKEMON_WEIGHT_COLUMN = "weight";
-    public static final String GENERATION_COLUMN = "generation";
-    public static final String NATIONAL_DEX_NUMBER_COLUMN = "dex_number";
-    public static final String POKEMON_TYPE_COLOUMN = "type";
+    public static final String COLUMN_NAME_HEIGHT = "height";
+    public static final String COLUMN_NAME_WEIGHT = "weight";
+    public static final String COLUMN_NAME_GENERATION = "generation";
+    public static final String COLUMN_NAME_DEX_NUMBER = "dex_number";
+    public static final String COLUMN_NAME_TYPE = "type";
     public static String data;
     public SQLiteDatabase dialgaDataBase;
 
@@ -136,8 +136,8 @@ public class SqliteHelper extends SQLiteOpenHelper {
         String name;
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT " + POKEMON_NAME_COLUMN + " FROM " + TABLE_NAME_POKEMON
-                + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
-                + " = "+ dexNumber;
+                + " WHERE "+ COLUMN_NAME_DEX_NUMBER
+                + " = "+ dexNumber + ";";
         Cursor init = db.rawQuery(query, null);
         init.moveToFirst();
 
@@ -152,13 +152,13 @@ public class SqliteHelper extends SQLiteOpenHelper {
         int height;
 
         SQLiteDatabase db = this.getReadableDatabase();
-        String query = "SELECT " + POKEMON_HEIGHT_COLUMN + " FROM "+ TABLE_NAME_POKEMON
-                + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
-                + " = "+ dexNumber;
+        String query = "SELECT " + COLUMN_NAME_HEIGHT + " FROM "+ TABLE_NAME_POKEMON
+                + " WHERE "+ COLUMN_NAME_DEX_NUMBER
+                + " = "+ dexNumber + ";";
         Cursor init = db.rawQuery(query, null);
         init.moveToFirst();
 
-        height = Integer.parseInt(init.getString(0));
+        height = Integer.parseInt(init.getString(init.getColumnIndex(COLUMN_NAME_HEIGHT)));
 
         init.close();
         return height;
@@ -169,13 +169,13 @@ public class SqliteHelper extends SQLiteOpenHelper {
         int weight;
 
         SQLiteDatabase db = this.getReadableDatabase();
-        String query = "SELECT " + POKEMON_WEIGHT_COLUMN + " FROM " + TABLE_NAME_POKEMON
-                + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
-                + " = "+ dexNumber;
+        String query = "SELECT " + COLUMN_NAME_WEIGHT + " FROM " + TABLE_NAME_POKEMON
+                + " WHERE "+ COLUMN_NAME_DEX_NUMBER
+                + " = "+ dexNumber + ";";
         Cursor init = db.rawQuery(query, null);
         init.moveToFirst();
 
-        weight = Integer.parseInt(init.getString(0));
+        weight = Integer.parseInt(init.getString(init.getColumnIndex(COLUMN_NAME_WEIGHT)));
 
         init.close();
         return weight;
@@ -188,12 +188,12 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT " + COLUMN_NAME_FORMS + " FROM " + TABLE_NAME_POKEMON
-                + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
-                + " = "+ dexNumber;
+                + " WHERE "+ COLUMN_NAME_DEX_NUMBER
+                + " = "+ dexNumber + ";";
         Cursor init = db.rawQuery(query, null);
         init.moveToFirst();
 
-        formCheck = init.getInt(0);
+        formCheck = init.getInt(init.getColumnIndex(COLUMN_NAME_FORMS));
 
         init.close();
 
@@ -211,28 +211,31 @@ public class SqliteHelper extends SQLiteOpenHelper {
         ArrayList<String> formsList = new ArrayList<>();
         String form;
 
+        String[] dex = new String[]{Integer.toString(dexNumber)};
+
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT " + COLUMN_NAME_RETURN_STRING + " FROM " + TABLE_NAME_FORMS
-                + " WHERE "+ NATIONAL_DEX_NUMBER_COLUMN
-                + " = "+ dexNumber;
-        Cursor init = db.rawQuery(query, null);
-        init.moveToFirst();
+                + " WHERE "+ COLUMN_NAME_DEX_NUMBER
+                + " = "+ dexNumber + ";";
+        Cursor init = db.rawQuery(query, dex);
 
-        do
-        {
 
-            form = init.getString(0);
-            formsList.add(form);
-            if(init.moveToNext()){
+        try {
+            init.moveToFirst();
+            int check = init.getCount();
+            while(!init.isAfterLast()) {
+
+                form = init.getString(init.getColumnIndex(COLUMN_NAME_RETURN_STRING));
+                formsList.add(form);
                 init.moveToNext();
+
+
             }
 
-        } while (init.moveToNext());
+        }finally{
 
-
-
-        init.close();
-
+                init.close();
+            }
         return formsList;
 
     }

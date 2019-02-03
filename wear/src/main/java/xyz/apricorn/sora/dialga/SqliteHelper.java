@@ -125,6 +125,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
     }
+
     public void onUpgrade(SQLiteDatabase database, int oldVersion, int newVersion) {}
 
     public String getPokemonName(int dexNumber){

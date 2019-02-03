@@ -1,0 +1,3 @@
+let counter=1; for i in $(cat /home/sora/Documents/pokemon/pkmn); do echo "insert into pokemon (dex_number, pokemon_name, generation) values ("$counter", '"$i"', 1, 'getResources().getResourceEntryName(R.drawable."$i")');";let counter=$counter+1;done;
+
+let counter=1; for i in $(cat /home/sora/Documents/pokemon/pkmn); do echo "gen1."$counter", '"$i"', 1);";let counter=$counter+1;done;

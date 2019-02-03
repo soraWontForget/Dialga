@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/sora/AndroidStudioProjects/Dialga/wear/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/sora/.gradle/caches/transforms-2/files-2.1/2d6ca75aef6b4241c2b9ebefdd9de079/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

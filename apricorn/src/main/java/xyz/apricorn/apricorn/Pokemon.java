@@ -15,9 +15,11 @@ public class Pokemon {
 	private Boolean shiny;
 	private Boolean form;
 
+	RNGRolls rng;
+
 	Pokemon(Context context) {
 		SqliteHelper sql = new SqliteHelper(context);
-		RNGRolls rng = new RNGRolls();
+		rng = new RNGRolls();
 		Breeding breeding = new Breeding();
 
 
@@ -35,7 +37,7 @@ public class Pokemon {
 
 	Pokemon(Context context, int dexNum) {
 		SqliteHelper sql = new SqliteHelper(context);
-		RNGRolls rng = new RNGRolls();
+		rng = new RNGRolls();
         Breeding breeding = new Breeding();
 
 		dexNumber = dexNum;
@@ -85,8 +87,6 @@ public class Pokemon {
 	    /*Boolean hasForms;*/
 		int index;
 	    SqliteHelper sql = new SqliteHelper(context);
-	    Random random = new Random();
-
 	    ArrayList<String> formsList;
 
 	    /*hasForms = sql.checkPokemonForm(dexNumber);*/
@@ -95,14 +95,14 @@ public class Pokemon {
 	    {*/
             formsList = sql.getFormsList(dexNumber);
 
-			index = formsList.size() - 1;
+			int boundary = formsList.size() - 1;
 
-            if (index > 0) {
-				index = random.nextInt(index);
+            if (boundary > 0) {
+				index = rng.formRoll(boundary);
+				returnForm = formsList.get(index);
+			} else {
+            	returnForm = formsList.get(0);
 			}
-
-			returnForm = formsList.get(index);
-        /*}*/
 
         sql.close();
 

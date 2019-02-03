@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class RNGRolls {
 
+    Random rand = new Random();
+
     public int rollDexNumber()
     {
         int dexNum;
-
-        Random rand = new Random();
 
         dexNum = rand.nextInt(807) + 1;
 
@@ -18,7 +18,6 @@ public class RNGRolls {
 
     public Boolean shinyRoll(Boolean foreignParent, Boolean shinyCharm)
     {
-        Random rand = new Random();
         int roll;
         int randIndex = 8192;
         int personalityValue = 1;
@@ -59,17 +58,14 @@ public class RNGRolls {
 
     }
 
-    public String megaRoll() {
-        Random rand = new Random();
+    public int formRoll(int boundary) {
 
         int roll;
-        String mega;
 
-        roll = rand.nextInt(3);
 
-        mega = roll < 2 ? "_mega" : "";
+        roll = rand.nextInt(boundary);
 
-        return mega;
+        return roll;
 
     }
 

@@ -99,7 +99,6 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
             switch (tapType) {
                 case WatchFaceService.TAP_TYPE_TAP:
                     rerollPkmnTeam.run();
-                    Toast.makeText(DialgaWatchFaceService.this, R.string.new_team_confirmation, Toast.LENGTH_SHORT).show();
                     break;
 
                 case WatchFaceService.TAP_TYPE_TOUCH:
@@ -327,12 +326,13 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
 
         }
 
-        // Asynchronously reroll the new teeam
+        // Asynchronously reroll the a new team
         private Runnable rerollPkmnTeam = new Runnable(){
             public void run(){
                 pkmnTeam.rerollTeam(DialgaWatchFaceService.this);
                 setTeamBitmap();
                 scaleSecondsHandArray();
+                Toast.makeText(DialgaWatchFaceService.this, R.string.new_team_confirmation, Toast.LENGTH_SHORT).show();
 
             }
 
