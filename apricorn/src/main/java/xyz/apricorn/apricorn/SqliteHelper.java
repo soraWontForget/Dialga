@@ -17,7 +17,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
 
     public static Context myContext;
-    public static final String DATABASE_NAME = "dialga-db.db";
+    public static final String DATABASE_NAME = "dialga-db.sqlite";
     public static final String DATABASE_PATH = "/data/data/xyz.apricorn.apricorn/databases/";
     public static final String TABLE_NAME_POKEMON = "pokemon";
     public static final String TABLE_NAME_FORMS = "forms";
@@ -217,7 +217,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
         String query = "SELECT " + COLUMN_NAME_RETURN_STRING + " FROM " + TABLE_NAME_FORMS
                 + " WHERE "+ COLUMN_NAME_DEX_NUMBER
                 + " = "+ dexNumber + ";";
-        Cursor init = db.rawQuery(query, dex);
+        Cursor init = db.rawQuery(query, null);
 
 
         try {

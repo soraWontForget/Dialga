@@ -18,8 +18,15 @@ import android.support.v7.graphics.Palette;
 import android.support.wearable.watchface.CanvasWatchFaceService;
 import android.support.wearable.watchface.WatchFaceService;
 import android.support.wearable.watchface.WatchFaceStyle;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.widget.Toast;
+
+import com.google.android.gms.wearable.DataEvent;
+import com.google.android.gms.wearable.DataEventBuffer;
+import com.google.android.gms.wearable.DataItem;
+import com.google.android.gms.wearable.DataMap;
+import com.google.android.gms.wearable.DataMapItem;
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
@@ -158,7 +165,7 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
         private boolean mAmbient;
 
         Random rand = new Random();
-        PokemonTeam pkmnTeam = new PokemonTeam(DialgaWatchFaceService.this);
+        PokemonTeam pkmnTeam;
 
         @Override
         public void onCreate(SurfaceHolder holder) {
@@ -179,6 +186,8 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
             } catch (IOException ioe) {
                 throw new Error("Unable to create database");
             }
+
+            pkmnTeam = new PokemonTeam(DialgaWatchFaceService.this);
 
             mCalendar = Calendar.getInstance();
 
@@ -754,6 +763,103 @@ public class DialgaWatchFaceService extends CanvasWatchFaceService {
             }
 
         }
+
+        @Override // DataApi.DataListener
+        public void onDataChanged(DataEventBuffer dataEvents) {
+            for (DataEvent dataEvent : dataEvents) {
+                if (dataEvent.getType() != DataEvent.TYPE_CHANGED) {
+                    continue;
+                }
+
+                DataItem dataItem = dataEvent.getDataItem();
+                if (!dataItem.getUri().getPath().equals(
+                        DialgaWatchFaceUtil.PATH_WITH_FEATURE)) {
+                    continue;
+                }
+
+                DataMapItem dataMapItem = DataMapItem.fromDataItem(dataItem);
+                DataMap config = dataMapItem.getDataMap();
+                if (Log.isLoggable(TAG, Log.DEBUG)) {
+                    Log.d(TAG, "Config DataItem updated:" + config);
+                }
+                updateUiForConfigDataMap(config);
+            }
+        }
+
+        private void updateUiForConfigDataMap(final DataMap config) {
+            boolean uiUpdated = false;
+            for (String configKey : config.keySet()) {
+                if (!config.containsKey(configKey)) {
+                    continue;
+                }
+                int color = config.getInt(configKey);
+                if (Log.isLoggable(TAG, Log.DEBUG)) {
+                    Log.d(TAG, "Found watch face config key: " + configKey + " -> "
+                            + Integer.toHexString(color));
+                }
+                if (updateUiForKey(configKey, color)) {
+                    uiUpdated = true;
+                }
+            }
+            if (uiUpdated) {
+                invalidate();
+            }
+        }
+
+        /**
+         * Updates the color of a UI item according to the given {@code configKey}. Does nothing if
+         * {@code configKey} isn't recognized.
+         *
+         * @return whether UI has been updated
+         */
+        private boolean updateUiForKey(String configKey, String name) {
+            if (configKey.equals(DialgaWatchFaceUtil.TEAM_LEAD_KEY)) {
+                setTeamLead(name);
+            } else if (configKey.equals(DialgaWatchFaceUtil.SLOT_2_KEY)) {
+                setSlot2(name);
+            } else if (configKey.equals(DialgaWatchFaceUtil.SLOT_3_KEY)) {
+                setSlot3(name);
+            } else if (configKey.equals(DialgaWatchFaceUtil.SLOT_4_KEY)) {
+                setSlot4(name);
+            } else if (configKey.equals(DialgaWatchFaceUtil.SLOT_5_KEY)) {
+                setSlot5(name);
+            } else {
+                Log.w(TAG, "Ignoring unknown config key: " + configKey);
+                return false;
+            }
+            return true;
+        }
+
+        private void setTeamLead (String name){
+
+            teamBitmap[0] =  pkmnTeam.getPokemonBitmap();
+        }
+
+        private void setSlot2 (String name){
+
+            teamBitmap[1] =  bitmap;
+        }
+
+        private void setSlot3 (String name){
+
+            teamBitmap[2] =  bitmap;
+        }
+
+        private void setSlot4 (String name){
+
+            teamBitmap[3] =  bitmap;
+        }
+
+        private void setSlot5 (String name){
+
+            teamBitmap[4] =  bitmap;
+        }
+
+        private void setSlot6 (String name){
+
+            teamBitmap[5] =  bitmap;
+        }
+
 
     }
 }

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Apricorn</string>
+
+    <!--No Device Connected Strings-->
+    <string name="title_no_device_connected">No Device Conencted</string>
+    <string name="ok_no_device_connected">Ok</string>
+
 </resources>

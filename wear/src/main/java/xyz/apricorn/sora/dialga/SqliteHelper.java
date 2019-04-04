@@ -18,7 +18,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
 
     public static final String DATABASE_PATH = "/data/data/xyz.apricorn.sora.dialga/databases/";
-    public static final String DATABASE_NAME = "dialga-db.db";
+    public static final String DATABASE_NAME = "dialga-db.sqlite";
     public static final String TABLE_NAME_POKEMON = "pokemon";
     public static final String TABLE_NAME_FORMS = "forms";
     private static final String COLUMN_NAME_FORMS = "forms";

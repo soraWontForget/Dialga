@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Generation One-->
+    <string name="pokemon_bulbasaur">Bulbasaur</string>
+    <string name="pokemon_ivysaur">Ivysaur</string>
+    <string name="pokemon_venusaur">Venusaur</string>
+    <string name="pokemon_charmander">Charmander</string>
+    <string name="pokemon_charmeleon">Charmeleon</string>
+    <string name="pokemon_charizard">Charizard</string>
+    <string name="pokemon_squirtle">Squirtle</string>
+    <string name="pokemon_wartortle">Wartortle</string>
+    <string name="pokemon_blastoise">Blastoise</string>
+    <string name="pokemon_caterpie">Caterpie</string>
+    <string name="pokemon_metapod">Metapod</string>
+    <string name="pokemon_butterfree">Butterfree</string>
+    <string name="pokemon_weedle">Weedle</string>
+    <string name="pokemon_kakuna">Kakuna</string>
+    <string name="pokemon_beedrill">Beedrill</string>
+    <string name="pokemon_pidgey">Pidgey</string>
+    <string name="pokemon_pidgeotto">Pidgeotto</string>
+    <string name="pokemon_pidgeot">Pidgeot</string>
+    <string name="pokemon_rattata">Rattata</string>
+    <string name="pokemon_raticate">Raticate</string>
+    <string name="pokemon_spearow">Spearow</string>
+    <string name="pokemon_fearow">Fearow</string>
+    <string name="pokemon_ekans">Ekans</string>
+    <string name="pokemon_arbok">Arbok</string>
+    <string name="pokemon_pikachu">Pikachu</string>
+    <string name="pokemon_raichu">Raichu</string>
+    <string name="pokemon_sandshrew">Sandshrew</string>
+    <string name="pokemon_sandslash">Sandslash</string>
+    <string name="pokemon_nidoranf">Nidoranf</string>
+    <string name="pokemon_nidorina">Nidorina</string>
+    <string name="pokemon_nidoqueen">Nidoqueen</string>
+    <string name="pokemon_nidoranm">Nidoranm</string>
+    <string name="pokemon_nidorino">Nidorino</string>
+    <string name="pokemon_nidoking">Nidoking</string>
+    <string name="pokemon_clefairy">Clefairy</string>
+    <string name="pokemon_clefable">Clefable</string>
+    <string name="pokemon_vulpix">Vulpix</string>
+    <string name="pokemon_ninetales">Ninetales</string>
+    <string name="pokemon_jigglypuff">Jigglypuff</string>
+    <string name="pokemon_wigglytuff">Wigglytuff</string>
+    <string name="pokemon_zubat">Zubat</string>
+    <string name="pokemon_golbat">Golbat</string>
+    <string name="pokemon_oddish">Oddish</string>
+    <string name="pokemon_gloom">Gloom</string>
+    <string name="pokemon_vileplume">Vileplume</string>
+    <string name="pokemon_paras">Paras</string>
+    <string name="pokemon_parasect">Parasect</string>
+    <string name="pokemon_venonat">Venonat</string>
+    <string name="pokemon_venomoth">Venomoth</string>
+    <string name="pokemon_diglett">Diglett</string>
+    <string name="pokemon_dugtrio">Dugtrio</string>
+    <string name="pokemon_meowth">Meowth</string>
+    <string name="pokemon_persian">Persian</string>
+    <string name="pokemon_psyduck">Psyduck</string>
+    <string name="pokemon_golduck">Golduck</string>
+    <string name="pokemon_mankey">Mankey</string>
+    <string name="pokemon_primeape">Primeape</string>
+    <string name="pokemon_growlithe">Growlithe</string>
+    <string name="pokemon_arcanine">Arcanine</string>
+    <string name="pokemon_poliwag">Poliwag</string>
+    <string name="pokemon_poliwhirl">Poliwhirl</string>
+    <string name="pokemon_poliwrath">Poliwrath</string>
+    <string name="pokemon_abra">Abra</string>
+    <string name="pokemon_kadabra">Kadabra</string>
+    <string name="pokemon_alakazam">Alakazam</string>
+    <string name="pokemon_machop">Machop</string>
+    <string name="pokemon_machoke">Machoke</string>
+    <string name="pokemon_machamp">Machamp</string>
+    <string name="pokemon_bellsprout">Bellsprout</string>
+    <string name="pokemon_weepinbell">Weepinbell</string>
+    <string name="pokemon_victreebel">Victreebel</string>
+    <string name="pokemon_tentacool">Tentacool</string>
+    <string name="pokemon_tentacruel">Tentacruel</string>
+    <string name="pokemon_geodude">Geodude</string>
+    <string name="pokemon_graveler">Graveler</string>
+    <string name="pokemon_golem">Golem</string>
+    <string name="pokemon_ponyta">Ponyta</string>
+    <string name="pokemon_rapidash">Rapidash</string>
+    <string name="pokemon_slowpoke">Slowpoke</string>
+    <string name="pokemon_slowbro">Slowbro</string>
+    <string name="pokemon_magnemite">Magnemite</string>
+    <string name="pokemon_magneton">Magneton</string>
+    <string name="pokemon_farfetchd">Farfetchd</string>
+    <string name="pokemon_doduo">Doduo</string>
+    <string name="pokemon_dodrio">Dodrio</string>
+    <string name="pokemon_seel">Seel</string>
+    <string name="pokemon_dewgong">Dewgong</string>
+    <string name="pokemon_grimer">Grimer</string>
+    <string name="pokemon_muk">Muk</string>
+    <string name="pokemon_shellder">Shellder</string>
+    <string name="pokemon_cloyster">Cloyster</string>
+    <string name="pokemon_gastly">Gastly</string>
+    <string name="pokemon_haunter">Haunter</string>
+    <string name="pokemon_gengar">Gengar</string>
+    <string name="pokemon_onix">Onix</string>
+    <string name="pokemon_drowzee">Drowzee</string>
+    <string name="pokemon_hypno">Hypno</string>
+    <string name="pokemon_krabby">Krabby</string>
+    <string name="pokemon_kingler">Kingler</string>
+    <string name="pokemon_voltorb">Voltorb</string>
+    <string name="pokemon_electrode">Electrode</string>
+    <string name="pokemon_exeggcute">Exeggcute</string>
+    <string name="pokemon_exeggutor">Exeggutor</string>
+    <string name="pokemon_cubone">Cubone</string>
+    <string name="pokemon_marowak">Marowak</string>
+    <string name="pokemon_hitmonlee">Hitmonlee</string>
+    <string name="pokemon_hitmonchan">Hitmonchan</string>
+    <string name="pokemon_lickitung">Lickitung</string>
+    <string name="pokemon_koffing">Koffing</string>
+    <string name="pokemon_weezing">Weezing</string>
+    <string name="pokemon_rhyhorn">Rhyhorn</string>
+    <string name="pokemon_rhydon">Rhydon</string>
+    <string name="pokemon_chansey">Chansey</string>
+    <string name="pokemon_tangela">Tangela</string>
+    <string name="pokemon_kangaskhan">Kangaskhan</string>
+    <string name="pokemon_horsea">Horsea</string>
+    <string name="pokemon_seadra">Seadra</string>
+    <string name="pokemon_goldeen">Goldeen</string>
+    <string name="pokemon_seaking">Seaking</string>
+    <string name="pokemon_staryu">Staryu</string>
+    <string name="pokemon_starmie">Starmie</string>
+    <string name="pokemon_mrmime">MrMime</string>
+    <string name="pokemon_scyther">Scyther</string>
+    <string name="pokemon_jynx">Jynx</string>
+    <string name="pokemon_electabuzz">Electabuzz</string>
+    <string name="pokemon_magmar">Magmar</string>
+    <string name="pokemon_pinsir">Pinsir</string>
+    <string name="pokemon_tauros">Tauros</string>
+    <string name="pokemon_magikarp">Magikarp</string>
+    <string name="pokemon_gyarados">Gyarados</string>
+    <string name="pokemon_lapras">Lapras</string>
+    <string name="pokemon_ditto">Ditto</string>
+    <string name="pokemon_eevee">Eevee</string>
+    <string name="pokemon_vaporeon">Vaporeon</string>
+    <string name="pokemon_jolteon">Jolteon</string>
+    <string name="pokemon_flareon">Flareon</string>
+    <string name="pokemon_porygon">Porygon</string>
+    <string name="pokemon_omanyte">Omanyte</string>
+    <string name="pokemon_omastar">Omastar</string>
+    <string name="pokemon_kabuto">Kabuto</string>
+    <string name="pokemon_kabutops">Kabutops</string>
+    <string name="pokemon_aerodactyl">Aerodactyl</string>
+    <string name="pokemon_snorlax">Snorlax</string>
+    <string name="pokemon_articuno">Articuno</string>
+    <string name="pokemon_zapdos">Zapdos</string>
+    <string name="pokemon_moltres">Moltres</string>
+    <string name="pokemon_dratini">Dratini</string>
+    <string name="pokemon_dragonair">Dragonair</string>
+    <string name="pokemon_dragonite">Dragonite</string>
+    <string name="pokemon_mewtwo">Mewtwo</string>
+    <string name="pokemon_mew">Mew</string>
+
+    <string-array name="Generation_One">
+        <item>@string/pokemon_bulbasaur</item>
+        <item>@string/pokemon_ivysaur</item>
+        <item>@string/pokemon_venusaur</item>
+        <item>@string/pokemon_charmander</item>
+        <item>@string/pokemon_charmeleon</item>
+        <item>@string/pokemon_charizard</item>
+        <item>@string/pokemon_squirtle</item>
+        <item>@string/pokemon_wartortle</item>
+        <item>@string/pokemon_blastoise</item>
+        <item>@string/pokemon_caterpie</item>
+        <item>@string/pokemon_metapod</item>
+        <item>@string/pokemon_butterfree</item>
+        <item>@string/pokemon_weedle</item>
+        <item>@string/pokemon_kakuna</item>
+        <item>@string/pokemon_beedrill</item>
+        <item>@string/pokemon_pidgey</item>
+        <item>@string/pokemon_pidgeotto</item>
+        <item>@string/pokemon_pidgeot</item>
+        <item>@string/pokemon_rattata</item>
+        <item>@string/pokemon_raticate</item>
+        <item>@string/pokemon_spearow</item>
+        <item>@string/pokemon_fearow</item>
+        <item>@string/pokemon_ekans</item>
+        <item>@string/pokemon_arbok</item>
+        <item>@string/pokemon_pikachu</item>
+        <item>@string/pokemon_raichu</item>
+        <item>@string/pokemon_sandshrew</item>
+        <item>@string/pokemon_sandslash</item>
+        <item>@string/pokemon_nidoranf</item>
+        <item>@string/pokemon_nidorina</item>
+        <item>@string/pokemon_nidoqueen</item>
+        <item>@string/pokemon_nidoranm</item>
+        <item>@string/pokemon_nidorino</item>
+        <item>@string/pokemon_nidoking</item>
+        <item>@string/pokemon_clefairy</item>
+        <item>@string/pokemon_clefable</item>
+        <item>@string/pokemon_vulpix</item>
+        <item>@string/pokemon_ninetales</item>
+        <item>@string/pokemon_jigglypuff</item>
+        <item>@string/pokemon_wigglytuff</item>
+        <item>@string/pokemon_zubat</item>
+        <item>@string/pokemon_golbat</item>
+        <item>@string/pokemon_oddish</item>
+        <item>@string/pokemon_gloom</item>
+        <item>@string/pokemon_vileplume</item>
+        <item>@string/pokemon_paras</item>
+        <item>@string/pokemon_parasect</item>
+        <item>@string/pokemon_venonat</item>
+        <item>@string/pokemon_venomoth</item>
+        <item>@string/pokemon_diglett</item>
+        <item>@string/pokemon_dugtrio</item>
+        <item>@string/pokemon_meowth</item>
+        <item>@string/pokemon_persian</item>
+        <item>@string/pokemon_psyduck</item>
+        <item>@string/pokemon_golduck</item>
+        <item>@string/pokemon_mankey</item>
+        <item>@string/pokemon_primeape</item>
+        <item>@string/pokemon_growlithe</item>
+        <item>@string/pokemon_arcanine</item>
+        <item>@string/pokemon_poliwag</item>
+        <item>@string/pokemon_poliwhirl</item>
+        <item>@string/pokemon_poliwrath</item>
+        <item>@string/pokemon_abra</item>
+        <item>@string/pokemon_kadabra</item>
+        <item>@string/pokemon_alakazam</item>
+        <item>@string/pokemon_machop</item>
+        <item>@string/pokemon_machoke</item>
+        <item>@string/pokemon_machamp</item>
+        <item>@string/pokemon_bellsprout</item>
+        <item>@string/pokemon_weepinbell</item>
+        <item>@string/pokemon_victreebel</item>
+        <item>@string/pokemon_tentacool</item>
+        <item>@string/pokemon_tentacruel</item>
+        <item>@string/pokemon_geodude</item>
+        <item>@string/pokemon_graveler</item>
+        <item>@string/pokemon_golem</item>
+        <item>@string/pokemon_ponyta</item>
+        <item>@string/pokemon_rapidash</item>
+        <item>@string/pokemon_slowpoke</item>
+        <item>@string/pokemon_slowbro</item>
+        <item>@string/pokemon_magnemite</item>
+        <item>@string/pokemon_magneton</item>
+        <item>@string/pokemon_farfetchd</item>
+        <item>@string/pokemon_doduo</item>
+        <item>@string/pokemon_dodrio</item>
+        <item>@string/pokemon_seel</item>
+        <item>@string/pokemon_dewgong</item>
+        <item>@string/pokemon_grimer</item>
+        <item>@string/pokemon_muk</item>
+        <item>@string/pokemon_shellder</item>
+        <item>@string/pokemon_cloyster</item>
+        <item>@string/pokemon_gastly</item>
+        <item>@string/pokemon_haunter</item>
+        <item>@string/pokemon_gengar</item>
+        <item>@string/pokemon_onix</item>
+        <item>@string/pokemon_drowzee</item>
+        <item>@string/pokemon_hypno</item>
+        <item>@string/pokemon_krabby</item>
+        <item>@string/pokemon_kingler</item>
+        <item>@string/pokemon_voltorb</item>
+        <item>@string/pokemon_electrode</item>
+        <item>@string/pokemon_exeggcute</item>
+        <item>@string/pokemon_exeggutor</item>
+        <item>@string/pokemon_cubone</item>
+        <item>@string/pokemon_marowak</item>
+        <item>@string/pokemon_hitmonlee</item>
+        <item>@string/pokemon_hitmonchan</item>
+        <item>@string/pokemon_lickitung</item>
+        <item>@string/pokemon_koffing</item>
+        <item>@string/pokemon_weezing</item>
+        <item>@string/pokemon_rhyhorn</item>
+        <item>@string/pokemon_rhydon</item>
+        <item>@string/pokemon_chansey</item>
+        <item>@string/pokemon_tangela</item>
+        <item>@string/pokemon_kangaskhan</item>
+        <item>@string/pokemon_horsea</item>
+        <item>@string/pokemon_seadra</item>
+        <item>@string/pokemon_goldeen</item>
+        <item>@string/pokemon_seaking</item>
+        <item>@string/pokemon_staryu</item>
+        <item>@string/pokemon_starmie</item>
+        <item>@string/pokemon_mrmime</item>
+        <item>@string/pokemon_scyther</item>
+        <item>@string/pokemon_jynx</item>
+        <item>@string/pokemon_electabuzz</item>
+        <item>@string/pokemon_magmar</item>
+        <item>@string/pokemon_pinsir</item>
+        <item>@string/pokemon_tauros</item>
+        <item>@string/pokemon_magikarp</item>
+        <item>@string/pokemon_gyarados</item>
+        <item>@string/pokemon_lapras</item>
+        <item>@string/pokemon_ditto</item>
+        <item>@string/pokemon_eevee</item>
+        <item>@string/pokemon_vaporeon</item>
+        <item>@string/pokemon_jolteon</item>
+        <item>@string/pokemon_flareon</item>
+        <item>@string/pokemon_porygon</item>
+        <item>@string/pokemon_omanyte</item>
+        <item>@string/pokemon_omastar</item>
+        <item>@string/pokemon_kabuto</item>
+        <item>@string/pokemon_kabutops</item>
+        <item>@string/pokemon_aerodactyl</item>
+        <item>@string/pokemon_snorlax</item>
+        <item>@string/pokemon_articuno</item>
+        <item>@string/pokemon_zapdos</item>
+        <item>@string/pokemon_moltres</item>
+        <item>@string/pokemon_dratini</item>
+        <item>@string/pokemon_dragonair</item>
+        <item>@string/pokemon_dragonite</item>
+        <item>@string/pokemon_mewtwo</item>
+        <item>@string/pokemon_mew</item>
+    </string-array>
+
+    <!--Generation Two-->
+    <string name="pokemon_chikorita">Chikorita</string>
+    <string name="pokemon_bayleef">Bayleef</string>
+    <string name="pokemon_meganium">Meganium</string>
+    <string name="pokemon_cyndaquil">Cyndaquil</string>
+    <string name="pokemon_quilava">Quilava</string>
+    <string name="pokemon_typhlosion">Typhlosion</string>
+    <string name="pokemon_totodile">Totodile</string>
+    <string name="pokemon_croconaw">Croconaw</string>
+    <string name="pokemon_feraligatr">Feraligatr</string>
+    <string name="pokemon_sentret">Sentret</string>
+    <string name="pokemon_furret">Furret</string>
+    <string name="pokemon_hoothoot">Hoothoot</string>
+    <string name="pokemon_noctowl">Noctowl</string>
+    <string name="pokemon_ledyba">Ledyba</string>
+    <string name="pokemon_ledian">Ledian</string>
+    <string name="pokemon_spinarak">Spinarak</string>
+    <string name="pokemon_ariados">Ariados</string>
+    <string name="pokemon_crobat">Crobat</string>
+    <string name="pokemon_chinchou">Chinchou</string>
+    <string name="pokemon_lanturn">Lanturn</string>
+    <string name="pokemon_pichu">Pichu</string>
+    <string name="pokemon_cleffa">Cleffa</string>
+    <string name="pokemon_igglybuff">Igglybuff</string>
+    <string name="pokemon_togepi">Togepi</string>
+    <string name="pokemon_togetic">Togetic</string>
+    <string name="pokemon_natu">Natu</string>
+    <string name="pokemon_xatu">Xatu</string>
+    <string name="pokemon_mareep">Mareep</string>
+    <string name="pokemon_flaaffy">Flaaffy</string>
+    <string name="pokemon_ampharos">Ampharos</string>
+    <string name="pokemon_bellossom">Bellossom</string>
+    <string name="pokemon_marill">Marill</string>
+    <string name="pokemon_azumarill">Azumarill</string>
+    <string name="pokemon_sudowoodo">Sudowoodo</string>
+    <string name="pokemon_politoed">Politoed</string>
+    <string name="pokemon_hoppip">Hoppip</string>
+    <string name="pokemon_skiploom">Skiploom</string>
+    <string name="pokemon_jumpluff">Jumpluff</string>
+    <string name="pokemon_aipom">Aipom</string>
+    <string name="pokemon_sunkern">Sunkern</string>
+    <string name="pokemon_sunflora">Sunflora</string>
+    <string name="pokemon_yanma">Yanma</string>
+    <string name="pokemon_wooper">Wooper</string>
+    <string name="pokemon_quagsire">Quagsire</string>
+    <string name="pokemon_espeon">Espeon</string>
+    <string name="pokemon_umbreon">Umbreon</string>
+    <string name="pokemon_murkrow">Murkrow</string>
+    <string name="pokemon_slowking">Slowking</string>
+    <string name="pokemon_misdreavus">Misdreavus</string>
+    <string name="pokemon_unown">Unown</string>
+    <string name="pokemon_wobbuffet">Wobbuffet</string>
+    <string name="pokemon_girafarig">Girafarig</string>
+    <string name="pokemon_pineco">Pineco</string>
+    <string name="pokemon_forretress">Forretress</string>
+    <string name="pokemon_dunsparce">Dunsparce</string>
+    <string name="pokemon_gligar">Gligar</string>
+    <string name="pokemon_steelix">Steelix</string>
+    <string name="pokemon_snubbull">Snubbull</string>
+    <string name="pokemon_granbull">Granbull</string>
+    <string name="pokemon_qwilfish">Qwilfish</string>
+    <string name="pokemon_scizor">Scizor</string>
+    <string name="pokemon_shuckle">Shuckle</string>
+    <string name="pokemon_heracross">Heracross</string>
+    <string name="pokemon_sneasel">Sneasel</string>
+    <string name="pokemon_teddiursa">Teddiursa</string>
+    <string name="pokemon_ursaring">Ursaring</string>
+    <string name="pokemon_slugma">Slugma</string>
+    <string name="pokemon_magcargo">Magcargo</string>
+    <string name="pokemon_swinub">Swinub</string>
+    <string name="pokemon_piloswine">Piloswine</string>
+    <string name="pokemon_corsola">Corsola</string>
+    <string name="pokemon_remoraid">Remoraid</string>
+    <string name="pokemon_octillery">Octillery</string>
+    <string name="pokemon_delibird">Delibird</string>
+    <string name="pokemon_mantine">Mantine</string>
+    <string name="pokemon_skarmory">Skarmory</string>
+    <string name="pokemon_houndour">Houndour</string>
+    <string name="pokemon_houndoom">Houndoom</string>
+    <string name="pokemon_kingdra">Kingdra</string>
+    <string name="pokemon_phanpy">Phanpy</string>
+    <string name="pokemon_donphan">Donphan</string>
+    <string name="pokemon_porygon2">Porygon2</string>
+    <string name="pokemon_stantler">Stantler</string>
+    <string name="pokemon_smeargle">Smeargle</string>
+    <string name="pokemon_tyrogue">Tyrogue</string>
+    <string name="pokemon_hitmontop">Hitmontop</string>
+    <string name="pokemon_smoochum">Smoochum</string>
+    <string name="pokemon_elekid">Elekid</string>
+    <string name="pokemon_magby">Magby</string>
+    <string name="pokemon_miltank">Miltank</string>
+    <string name="pokemon_blissey">Blissey</string>
+    <string name="pokemon_raikou">Raikou</string>
+    <string name="pokemon_entei">Entei</string>
+    <string name="pokemon_suicune">Suicune</string>
+    <string name="pokemon_larvitar">Larvitar</string>
+    <string name="pokemon_pupitar">Pupitar</string>
+    <string name="pokemon_tyranitar">Tyranitar</string>
+    <string name="pokemon_lugia">Lugia</string>
+    <string name="pokemon_ho_oh">Ho-Oh</string>
+    <string name="pokemon_celebi">Celebi</string>
+
+    <string-array name="Generation_Two">
+        <item>@string/pokemon_chikorita</item>
+        <item>@string/pokemon_bayleef</item>
+        <item>@string/pokemon_meganium</item>
+        <item>@string/pokemon_cyndaquil</item>
+        <item>@string/pokemon_quilava</item>
+        <item>@string/pokemon_typhlosion</item>
+        <item>@string/pokemon_totodile</item>
+        <item>@string/pokemon_croconaw</item>
+        <item>@string/pokemon_feraligatr</item>
+        <item>@string/pokemon_sentret</item>
+        <item>@string/pokemon_furret</item>
+        <item>@string/pokemon_hoothoot</item>
+        <item>@string/pokemon_noctowl</item>
+        <item>@string/pokemon_ledyba</item>
+        <item>@string/pokemon_ledian</item>
+        <item>@string/pokemon_spinarak</item>
+        <item>@string/pokemon_ariados</item>
+        <item>@string/pokemon_crobat</item>
+        <item>@string/pokemon_chinchou</item>
+        <item>@string/pokemon_lanturn</item>
+        <item>@string/pokemon_pichu</item>
+        <item>@string/pokemon_cleffa</item>
+        <item>@string/pokemon_igglybuff</item>
+        <item>@string/pokemon_togepi</item>
+        <item>@string/pokemon_togetic</item>
+        <item>@string/pokemon_natu</item>
+        <item>@string/pokemon_xatu</item>
+        <item>@string/pokemon_mareep</item>
+        <item>@string/pokemon_flaaffy</item>
+        <item>@string/pokemon_ampharos</item>
+        <item>@string/pokemon_bellossom</item>
+        <item>@string/pokemon_marill</item>
+        <item>@string/pokemon_azumarill</item>
+        <item>@string/pokemon_sudowoodo</item>
+        <item>@string/pokemon_politoed</item>
+        <item>@string/pokemon_hoppip</item>
+        <item>@string/pokemon_skiploom</item>
+        <item>@string/pokemon_jumpluff</item>
+        <item>@string/pokemon_aipom</item>
+        <item>@string/pokemon_sunkern</item>
+        <item>@string/pokemon_sunflora</item>
+        <item>@string/pokemon_yanma</item>
+        <item>@string/pokemon_wooper</item>
+        <item>@string/pokemon_quagsire</item>
+        <item>@string/pokemon_espeon</item>
+        <item>@string/pokemon_umbreon</item>
+        <item>@string/pokemon_murkrow</item>
+        <item>@string/pokemon_slowking</item>
+        <item>@string/pokemon_misdreavus</item>
+        <item>@string/pokemon_unown</item>
+        <item>@string/pokemon_wobbuffet</item>
+        <item>@string/pokemon_girafarig</item>
+        <item>@string/pokemon_pineco</item>
+        <item>@string/pokemon_forretress</item>
+        <item>@string/pokemon_dunsparce</item>
+        <item>@string/pokemon_gligar</item>
+        <item>@string/pokemon_steelix</item>
+        <item>@string/pokemon_snubbull</item>
+        <item>@string/pokemon_granbull</item>
+        <item>@string/pokemon_qwilfish</item>
+        <item>@string/pokemon_scizor</item>
+        <item>@string/pokemon_shuckle</item>
+        <item>@string/pokemon_heracross</item>
+        <item>@string/pokemon_sneasel</item>
+        <item>@string/pokemon_teddiursa</item>
+        <item>@string/pokemon_ursaring</item>
+        <item>@string/pokemon_slugma</item>
+        <item>@string/pokemon_magcargo</item>
+        <item>@string/pokemon_swinub</item>
+        <item>@string/pokemon_piloswine</item>
+        <item>@string/pokemon_corsola</item>
+        <item>@string/pokemon_remoraid</item>
+        <item>@string/pokemon_octillery</item>
+        <item>@string/pokemon_delibird</item>
+        <item>@string/pokemon_mantine</item>
+        <item>@string/pokemon_skarmory</item>
+        <item>@string/pokemon_houndour</item>
+        <item>@string/pokemon_houndoom</item>
+        <item>@string/pokemon_kingdra</item>
+        <item>@string/pokemon_phanpy</item>
+        <item>@string/pokemon_donphan</item>
+        <item>@string/pokemon_porygon2</item>
+        <item>@string/pokemon_stantler</item>
+        <item>@string/pokemon_smeargle</item>
+        <item>@string/pokemon_tyrogue</item>
+        <item>@string/pokemon_hitmontop</item>
+        <item>@string/pokemon_smoochum</item>
+        <item>@string/pokemon_elekid</item>
+        <item>@string/pokemon_magby</item>
+        <item>@string/pokemon_miltank</item>
+        <item>@string/pokemon_blissey</item>
+        <item>@string/pokemon_raikou</item>
+        <item>@string/pokemon_entei</item>
+        <item>@string/pokemon_suicune</item>
+        <item>@string/pokemon_larvitar</item>
+        <item>@string/pokemon_pupitar</item>
+        <item>@string/pokemon_tyranitar</item>
+        <item>@string/pokemon_lugia</item>
+        <item>@string/pokemon_ho-oh</item>
+        <item>@string/pokemon_celebi</item>
+    </string-array>
+
+
+    <!--Generation Three-->
+    <string name="pokemon_treecko">Treecko</string>
+    <string name="pokemon_grovyle">Grovyle</string>
+    <string name="pokemon_sceptile">Sceptile</string>
+    <string name="pokemon_torchic">Torchic</string>
+    <string name="pokemon_combusken">Combusken</string>
+    <string name="pokemon_blaziken">Blaziken</string>
+    <string name="pokemon_mudkip">Mudkip</string>
+    <string name="pokemon_marshtomp">Marshtomp</string>
+    <string name="pokemon_swampert">Swampert</string>
+    <string name="pokemon_poochyena">Poochyena</string>
+    <string name="pokemon_mightyena">Mightyena</string>
+    <string name="pokemon_zigzagoon">Zigzagoon</string>
+    <string name="pokemon_linoone">Linoone</string>
+    <string name="pokemon_wurmple">Wurmple</string>
+    <string name="pokemon_silcoon">Silcoon</string>
+    <string name="pokemon_beautifly">Beautifly</string>
+    <string name="pokemon_cascoon">Cascoon</string>
+    <string name="pokemon_dustox">Dustox</string>
+    <string name="pokemon_lotad">Lotad</string>
+    <string name="pokemon_lombre">Lombre</string>
+    <string name="pokemon_ludicolo">Ludicolo</string>
+    <string name="pokemon_seedot">Seedot</string>
+    <string name="pokemon_nuzleaf">Nuzleaf</string>
+    <string name="pokemon_shiftry">Shiftry</string>
+    <string name="pokemon_taillow">Taillow</string>
+    <string name="pokemon_swellow">Swellow</string>
+    <string name="pokemon_wingull">Wingull</string>
+    <string name="pokemon_pelipper">Pelipper</string>
+    <string name="pokemon_ralts">Ralts</string>
+    <string name="pokemon_kirlia">Kirlia</string>
+    <string name="pokemon_gardevoir">Gardevoir</string>
+    <string name="pokemon_surskit">Surskit</string>
+    <string name="pokemon_masquerain">Masquerain</string>
+    <string name="pokemon_shroomish">Shroomish</string>
+    <string name="pokemon_breloom">Breloom</string>
+    <string name="pokemon_slakoth">Slakoth</string>
+    <string name="pokemon_vigoroth">Vigoroth</string>
+    <string name="pokemon_slaking">Slaking</string>
+    <string name="pokemon_nincada">Nincada</string>
+    <string name="pokemon_ninjask">Ninjask</string>
+    <string name="pokemon_shedinja">Shedinja</string>
+    <string name="pokemon_whismur">Whismur</string>
+    <string name="pokemon_loudred">Loudred</string>
+    <string name="pokemon_exploud">Exploud</string>
+    <string name="pokemon_makuhita">Makuhita</string>
+    <string name="pokemon_hariyama">Hariyama</string>
+    <string name="pokemon_azurill">Azurill</string>
+    <string name="pokemon_nosepass">Nosepass</string>
+    <string name="pokemon_skitty">Skitty</string>
+    <string name="pokemon_delcatty">Delcatty</string>
+    <string name="pokemon_sableye">Sableye</string>
+    <string name="pokemon_mawile">Mawile</string>
+    <string name="pokemon_aron">Aron</string>
+    <string name="pokemon_lairon">Lairon</string>
+    <string name="pokemon_aggron">Aggron</string>
+    <string name="pokemon_meditite">Meditite</string>
+    <string name="pokemon_medicham">Medicham</string>
+    <string name="pokemon_electrike">Electrike</string>
+    <string name="pokemon_manectric">Manectric</string>
+    <string name="pokemon_plusle">Plusle</string>
+    <string name="pokemon_minun">Minun</string>
+    <string name="pokemon_volbeat">Volbeat</string>
+    <string name="pokemon_illumise">Illumise</string>
+    <string name="pokemon_roselia">Roselia</string>
+    <string name="pokemon_gulpin">Gulpin</string>
+    <string name="pokemon_swalot">Swalot</string>
+    <string name="pokemon_carvanha">Carvanha</string>
+    <string name="pokemon_sharpedo">Sharpedo</string>
+    <string name="pokemon_wailmer">Wailmer</string>
+    <string name="pokemon_wailord">Wailord</string>
+    <string name="pokemon_numel">Numel</string>
+    <string name="pokemon_camerupt">Camerupt</string>
+    <string name="pokemon_torkoal">Torkoal</string>
+    <string name="pokemon_spoink">Spoink</string>
+    <string name="pokemon_grumpig">Grumpig</string>
+    <string name="pokemon_spinda">Spinda</string>
+    <string name="pokemon_trapinch">Trapinch</string>
+    <string name="pokemon_vibrava">Vibrava</string>
+    <string name="pokemon_flygon">Flygon</string>
+    <string name="pokemon_cacnea">Cacnea</string>
+    <string name="pokemon_cacturne">Cacturne</string>
+    <string name="pokemon_swablu">Swablu</string>
+    <string name="pokemon_altaria">Altaria</string>
+    <string name="pokemon_zangoose">Zangoose</string>
+    <string name="pokemon_seviper">Seviper</string>
+    <string name="pokemon_lunatone">Lunatone</string>
+    <string name="pokemon_solrock">Solrock</string>
+    <string name="pokemon_barboach">Barboach</string>
+    <string name="pokemon_whiscash">Whiscash</string>
+    <string name="pokemon_corphish">Corphish</string>
+    <string name="pokemon_crawdaunt">Crawdaunt</string>
+    <string name="pokemon_baltoy">Baltoy</string>
+    <string name="pokemon_claydol">Claydol</string>
+    <string name="pokemon_lileep">Lileep</string>
+    <string name="pokemon_cradily">Cradily</string>
+    <string name="pokemon_anorith">Anorith</string>
+    <string name="pokemon_armaldo">Armaldo</string>
+    <string name="pokemon_feebas">Feebas</string>
+    <string name="pokemon_milotic">Milotic</string>
+    <string name="pokemon_castform">Castform</string>
+    <string name="pokemon_kecleon">Kecleon</string>
+    <string name="pokemon_shuppet">Shuppet</string>
+    <string name="pokemon_banette">Banette</string>
+    <string name="pokemon_duskull">Duskull</string>
+    <string name="pokemon_dusclops">Dusclops</string>
+    <string name="pokemon_tropius">Tropius</string>
+    <string name="pokemon_chimecho">Chimecho</string>
+    <string name="pokemon_absol">Absol</string>
+    <string name="pokemon_wynaut">Wynaut</string>
+    <string name="pokemon_snorunt">Snorunt</string>
+    <string name="pokemon_glalie">Glalie</string>
+    <string name="pokemon_spheal">Spheal</string>
+    <string name="pokemon_sealeo">Sealeo</string>
+    <string name="pokemon_walrein">Walrein</string>
+    <string name="pokemon_clamperl">Clamperl</string>
+    <string name="pokemon_huntail">Huntail</string>
+    <string name="pokemon_gorebyss">Gorebyss</string>
+    <string name="pokemon_relicanth">Relicanth</string>
+    <string name="pokemon_luvdisc">Luvdisc</string>
+    <string name="pokemon_bagon">Bagon</string>
+    <string name="pokemon_shelgon">Shelgon</string>
+    <string name="pokemon_salamence">Salamence</string>
+    <string name="pokemon_beldum">Beldum</string>
+    <string name="pokemon_metang">Metang</string>
+    <string name="pokemon_metagross">Metagross</string>
+    <string name="pokemon_regirock">Regirock</string>
+    <string name="pokemon_regice">Regice</string>
+    <string name="pokemon_registeel">Registeel</string>
+    <string name="pokemon_latias">Latias</string>
+    <string name="pokemon_latios">Latios</string>
+    <string name="pokemon_kyogre">Kyogre</string>
+    <string name="pokemon_groudon">Groudon</string>
+    <string name="pokemon_rayquaza">Rayquaza</string>
+    <string name="pokemon_jirachi">Jirachi</string>
+    <string name="pokemon_deoxys">Deoxys</string>
+
+
+
+    <!--Generation Four-->
+    <string name="pokemon_turtwig">Turtwig</string>
+    <string name="pokemon_grotle">Grotle</string>
+    <string name="pokemon_torterra">Torterra</string>
+    <string name="pokemon_chimchar">Chimchar</string>
+    <string name="pokemon_monferno">Monferno</string>
+    <string name="pokemon_infernape">Infernape</string>
+    <string name="pokemon_piplup">Piplup</string>
+    <string name="pokemon_prinplup">Prinplup</string>
+    <string name="pokemon_empoleon">Empoleon</string>
+    <string name="pokemon_starly">Starly</string>
+    <string name="pokemon_staravia">Staravia</string>
+    <string name="pokemon_staraptor">Staraptor</string>
+    <string name="pokemon_bidoof">Bidoof</string>
+    <string name="pokemon_bibarel">Bibarel</string>
+    <string name="pokemon_kricketot">Kricketot</string>
+    <string name="pokemon_kricketune">Kricketune</string>
+    <string name="pokemon_shinx">Shinx</string>
+    <string name="pokemon_luxio">Luxio</string>
+    <string name="pokemon_luxray">Luxray</string>
+    <string name="pokemon_budew">Budew</string>
+    <string name="pokemon_roserade">Roserade</string>
+    <string name="pokemon_cranidos">Cranidos</string>
+    <string name="pokemon_rampardos">Rampardos</string>
+    <string name="pokemon_shieldon">Shieldon</string>
+    <string name="pokemon_bastiodon">Bastiodon</string>
+    <string name="pokemon_burmy">Burmy</string>
+    <string name="pokemon_wormadam">Wormadam</string>
+    <string name="pokemon_mothim">Mothim</string>
+    <string name="pokemon_combee">Combee</string>
+    <string name="pokemon_vespiquen">Vespiquen</string>
+    <string name="pokemon_pachirisu">Pachirisu</string>
+    <string name="pokemon_buizel">Buizel</string>
+    <string name="pokemon_floatzel">Floatzel</string>
+    <string name="pokemon_cherubi">Cherubi</string>
+    <string name="pokemon_cherrim">Cherrim</string>
+    <string name="pokemon_shellos">Shellos</string>
+    <string name="pokemon_gastrodon">Gastrodon</string>
+    <string name="pokemon_ambipom">Ambipom</string>
+    <string name="pokemon_drifloon">Drifloon</string>
+    <string name="pokemon_drifblim">Drifblim</string>
+    <string name="pokemon_buneary">Buneary</string>
+    <string name="pokemon_lopunny">Lopunny</string>
+    <string name="pokemon_mismagius">Mismagius</string>
+    <string name="pokemon_honchkrow">Honchkrow</string>
+    <string name="pokemon_glameow">Glameow</string>
+    <string name="pokemon_purugly">Purugly</string>
+    <string name="pokemon_chingling">Chingling</string>
+    <string name="pokemon_stunky">Stunky</string>
+    <string name="pokemon_skuntank">Skuntank</string>
+    <string name="pokemon_bronzor">Bronzor</string>
+    <string name="pokemon_bronzong">Bronzong</string>
+    <string name="pokemon_bonsly">Bonsly</string>
+    <string name="pokemon_mimejr">MimeJr</string>
+    <string name="pokemon_happiny">Happiny</string>
+    <string name="pokemon_chatot">Chatot</string>
+    <string name="pokemon_spiritomb">Spiritomb</string>
+    <string name="pokemon_gible">Gible</string>
+    <string name="pokemon_gabite">Gabite</string>
+    <string name="pokemon_garchomp">Garchomp</string>
+    <string name="pokemon_munchlax">Munchlax</string>
+    <string name="pokemon_riolu">Riolu</string>
+    <string name="pokemon_lucario">Lucario</string>
+    <string name="pokemon_hippopotas">Hippopotas</string>
+    <string name="pokemon_hippowdon">Hippowdon</string>
+    <string name="pokemon_skorupi">Skorupi</string>
+    <string name="pokemon_drapion">Drapion</string>
+    <string name="pokemon_croagunk">Croagunk</string>
+    <string name="pokemon_toxicroak">Toxicroak</string>
+    <string name="pokemon_carnivine">Carnivine</string>
+    <string name="pokemon_finneon">Finneon</string>
+    <string name="pokemon_lumineon">Lumineon</string>
+    <string name="pokemon_mantyke">Mantyke</string>
+    <string name="pokemon_snover">Snover</string>
+    <string name="pokemon_abomasnow">Abomasnow</string>
+    <string name="pokemon_weavile">Weavile</string>
+    <string name="pokemon_magnezone">Magnezone</string>
+    <string name="pokemon_lickilicky">Lickilicky</string>
+    <string name="pokemon_rhyperior">Rhyperior</string>
+    <string name="pokemon_tangrowth">Tangrowth</string>
+    <string name="pokemon_electivire">Electivire</string>
+    <string name="pokemon_magmortar">Magmortar</string>
+    <string name="pokemon_togekiss">Togekiss</string>
+    <string name="pokemon_yanmega">Yanmega</string>
+    <string name="pokemon_leafeon">Leafeon</string>
+    <string name="pokemon_glaceon">Glaceon</string>
+    <string name="pokemon_gliscor">Gliscor</string>
+    <string name="pokemon_mamoswine">Mamoswine</string>
+    <string name="pokemon_porygonz">Porygon-Z</string>
+    <string name="pokemon_gallade">Gallade</string>
+    <string name="pokemon_probopass">Probopass</string>
+    <string name="pokemon_dusknoir">Dusknoir</string>
+    <string name="pokemon_froslass">Froslass</string>
+    <string name="pokemon_rotom">Rotom</string>
+    <string name="pokemon_uxie">Uxie</string>
+    <string name="pokemon_mesprit">Mesprit</string>
+    <string name="pokemon_azelf">Azelf</string>
+    <string name="pokemon_dialga">Dialga</string>
+    <string name="pokemon_palkia">Palkia</string>
+    <string name="pokemon_heatran">Heatran</string>
+    <string name="pokemon_regigigas">Regigigas</string>
+    <string name="pokemon_giratina">Giratina</string>
+    <string name="pokemon_cresselia">Cresselia</string>
+    <string name="pokemon_phione">Phione</string>
+    <string name="pokemon_manaphy">Manaphy</string>
+    <string name="pokemon_darkrai">Darkrai</string>
+    <string name="pokemon_shaymin">Shaymin</string>
+    <string name="pokemon_arceus">Arceus</string>
+
+    <string-array name="Generation_Four">
+        <item>@string/pokemon_turtwig</item>
+        <item>@string/pokemon_grotle</item>
+        <item>@string/pokemon_torterra</item>
+        <item>@string/pokemon_chimchar</item>
+        <item>@string/pokemon_monferno</item>
+        <item>@string/pokemon_infernape</item>
+        <item>@string/pokemon_piplup</item>
+        <item>@string/pokemon_prinplup</item>
+        <item>@string/pokemon_empoleon</item>
+        <item>@string/pokemon_starly</item>
+        <item>@string/pokemon_staravia</item>
+        <item>@string/pokemon_staraptor</item>
+        <item>@string/pokemon_bidoof</item>
+        <item>@string/pokemon_bibarel</item>
+        <item>@string/pokemon_kricketot</item>
+        <item>@string/pokemon_kricketune</item>
+        <item>@string/pokemon_shinx</item>
+        <item>@string/pokemon_luxio</item>
+        <item>@string/pokemon_luxray</item>
+        <item>@string/pokemon_budew</item>
+        <item>@string/pokemon_roserade</item>
+        <item>@string/pokemon_cranidos</item>
+        <item>@string/pokemon_rampardos</item>
+        <item>@string/pokemon_shieldon</item>
+        <item>@string/pokemon_bastiodon</item>
+        <item>@string/pokemon_burmy</item>
+        <item>@string/pokemon_wormadam</item>
+        <item>@string/pokemon_mothim</item>
+        <item>@string/pokemon_combee</item>
+        <item>@string/pokemon_vespiquen</item>
+        <item>@string/pokemon_pachirisu</item>
+        <item>@string/pokemon_buizel</item>
+        <item>@string/pokemon_floatzel</item>
+        <item>@string/pokemon_cherubi</item>
+        <item>@string/pokemon_cherrim</item>
+        <item>@string/pokemon_shellos</item>
+        <item>@string/pokemon_gastrodon</item>
+        <item>@string/pokemon_ambipom</item>
+        <item>@string/pokemon_drifloon</item>
+        <item>@string/pokemon_drifblim</item>
+        <item>@string/pokemon_buneary</item>
+        <item>@string/pokemon_lopunny</item>
+        <item>@string/pokemon_mismagius</item>
+        <item>@string/pokemon_honchkrow</item>
+        <item>@string/pokemon_glameow</item>
+        <item>@string/pokemon_purugly</item>
+        <item>@string/pokemon_chingling</item>
+        <item>@string/pokemon_stunky</item>
+        <item>@string/pokemon_skuntank</item>
+        <item>@string/pokemon_bronzor</item>
+        <item>@string/pokemon_bronzong</item>
+        <item>@string/pokemon_bonsly</item>
+        <item>@string/pokemon_mimejr</item>
+        <item>@string/pokemon_happiny</item>
+        <item>@string/pokemon_chatot</item>
+        <item>@string/pokemon_spiritomb</item>
+        <item>@string/pokemon_gible</item>
+        <item>@string/pokemon_gabite</item>
+        <item>@string/pokemon_garchomp</item>
+        <item>@string/pokemon_munchlax</item>
+        <item>@string/pokemon_riolu</item>
+        <item>@string/pokemon_lucario</item>
+        <item>@string/pokemon_hippopotas</item>
+        <item>@string/pokemon_hippowdon</item>
+        <item>@string/pokemon_skorupi</item>
+        <item>@string/pokemon_drapion</item>
+        <item>@string/pokemon_croagunk</item>
+        <item>@string/pokemon_toxicroak</item>
+        <item>@string/pokemon_carnivine</item>
+        <item>@string/pokemon_finneon</item>
+        <item>@string/pokemon_lumineon</item>
+        <item>@string/pokemon_mantyke</item>
+        <item>@string/pokemon_snover</item>
+        <item>@string/pokemon_abomasnow</item>
+        <item>@string/pokemon_weavile</item>
+        <item>@string/pokemon_magnezone</item>
+        <item>@string/pokemon_lickilicky</item>
+        <item>@string/pokemon_rhyperior</item>
+        <item>@string/pokemon_tangrowth</item>
+        <item>@string/pokemon_electivire</item>
+        <item>@string/pokemon_magmortar</item>
+        <item>@string/pokemon_togekiss</item>
+        <item>@string/pokemon_yanmega</item>
+        <item>@string/pokemon_leafeon</item>
+        <item>@string/pokemon_glaceon</item>
+        <item>@string/pokemon_gliscor</item>
+        <item>@string/pokemon_mamoswine</item>
+        <item>@string/pokemon_porygonz</item>
+        <item>@string/pokemon_gallade</item>
+        <item>@string/pokemon_probopass</item>
+        <item>@string/pokemon_dusknoir</item>
+        <item>@string/pokemon_froslass</item>
+        <item>@string/pokemon_rotom</item>
+        <item>@string/pokemon_uxie</item>
+        <item>@string/pokemon_mesprit</item>
+        <item>@string/pokemon_azelf</item>
+        <item>@string/pokemon_dialga</item>
+        <item>@string/pokemon_palkia</item>
+        <item>@string/pokemon_heatran</item>
+        <item>@string/pokemon_regigigas</item>
+        <item>@string/pokemon_giratina</item>
+        <item>@string/pokemon_cresselia</item>
+        <item>@string/pokemon_phione</item>
+        <item>@string/pokemon_manaphy</item>
+        <item>@string/pokemon_darkrai</item>
+        <item>@string/pokemon_shaymin</item>
+        <item>@string/pokemon_arceus</item>
+    </string-array>
+
+    <!--Generation Five-->
+    <string name="pokemon_victini">Victini</string>
+    <string name="pokemon_snivy">Snivy</string>
+    <string name="pokemon_servine">Servine</string>
+    <string name="pokemon_serperior">Serperior</string>
+    <string name="pokemon_tepig">Tepig</string>
+    <string name="pokemon_pignite">Pignite</string>
+    <string name="pokemon_emboar">Emboar</string>
+    <string name="pokemon_oshawott">Oshawott</string>
+    <string name="pokemon_dewott">Dewott</string>
+    <string name="pokemon_samurott">Samurott</string>
+    <string name="pokemon_patrat">Patrat</string>
+    <string name="pokemon_watchog">Watchog</string>
+    <string name="pokemon_lillipup">Lillipup</string>
+    <string name="pokemon_herdier">Herdier</string>
+    <string name="pokemon_stoutland">Stoutland</string>
+    <string name="pokemon_purrloin">Purrloin</string>
+    <string name="pokemon_liepard">Liepard</string>
+    <string name="pokemon_pansage">Pansage</string>
+    <string name="pokemon_simisage">Simisage</string>
+    <string name="pokemon_pansear">Pansear</string>
+    <string name="pokemon_simisear">Simisear</string>
+    <string name="pokemon_panpour">Panpour</string>
+    <string name="pokemon_simipour">Simipour</string>
+    <string name="pokemon_munna">Munna</string>
+    <string name="pokemon_musharna">Musharna</string>
+    <string name="pokemon_pidove">Pidove</string>
+    <string name="pokemon_tranquill">Tranquill</string>
+    <string name="pokemon_unfezant">Unfezant</string>
+    <string name="pokemon_blitzle">Blitzle</string>
+    <string name="pokemon_zebstrika">Zebstrika</string>
+    <string name="pokemon_roggenrola">Roggenrola</string>
+    <string name="pokemon_boldore">Boldore</string>
+    <string name="pokemon_gigalith">Gigalith</string>
+    <string name="pokemon_woobat">Woobat</string>
+    <string name="pokemon_swoobat">Swoobat</string>
+    <string name="pokemon_drilbur">Drilbur</string>
+    <string name="pokemon_excadrill">Excadrill</string>
+    <string name="pokemon_audino">Audino</string>
+    <string name="pokemon_timburr">Timburr</string>
+    <string name="pokemon_gurdurr">Gurdurr</string>
+    <string name="pokemon_conkeldurr">Conkeldurr</string>
+    <string name="pokemon_tympole">Tympole</string>
+    <string name="pokemon_palpitoad">Palpitoad</string>
+    <string name="pokemon_seismitoad">Seismitoad</string>
+    <string name="pokemon_throh">Throh</string>
+    <string name="pokemon_sawk">Sawk</string>
+    <string name="pokemon_sewaddle">Sewaddle</string>
+    <string name="pokemon_swadloon">Swadloon</string>
+    <string name="pokemon_leavanny">Leavanny</string>
+    <string name="pokemon_venipede">Venipede</string>
+    <string name="pokemon_whirlipede">Whirlipede</string>
+    <string name="pokemon_scolipede">Scolipede</string>
+    <string name="pokemon_cottonee">Cottonee</string>
+    <string name="pokemon_whimsicott">Whimsicott</string>
+    <string name="pokemon_petilil">Petilil</string>
+    <string name="pokemon_lilligant">Lilligant</string>
+    <string name="pokemon_basculin">Basculin</string>
+    <string name="pokemon_sandile">Sandile</string>
+    <string name="pokemon_krokorok">Krokorok</string>
+    <string name="pokemon_krookodile">Krookodile</string>
+    <string name="pokemon_darumaka">Darumaka</string>
+    <string name="pokemon_darmanitan">Darmanitan</string>
+    <string name="pokemon_maractus">Maractus</string>
+    <string name="pokemon_dwebble">Dwebble</string>
+    <string name="pokemon_crustle">Crustle</string>
+    <string name="pokemon_scraggy">Scraggy</string>
+    <string name="pokemon_scrafty">Scrafty</string>
+    <string name="pokemon_sigilyph">Sigilyph</string>
+    <string name="pokemon_yamask">Yamask</string>
+    <string name="pokemon_cofagrigus">Cofagrigus</string>
+    <string name="pokemon_tirtouga">Tirtouga</string>
+    <string name="pokemon_carracosta">Carracosta</string>
+    <string name="pokemon_archen">Archen</string>
+    <string name="pokemon_archeops">Archeops</string>
+    <string name="pokemon_trubbish">Trubbish</string>
+    <string name="pokemon_garbodor">Garbodor</string>
+    <string name="pokemon_zorua">Zorua</string>
+    <string name="pokemon_zoroark">Zoroark</string>
+    <string name="pokemon_minccino">Minccino</string>
+    <string name="pokemon_cinccino">Cinccino</string>
+    <string name="pokemon_gothita">Gothita</string>
+    <string name="pokemon_gothorita">Gothorita</string>
+    <string name="pokemon_gothitelle">Gothitelle</string>
+    <string name="pokemon_solosis">Solosis</string>
+    <string name="pokemon_duosion">Duosion</string>
+    <string name="pokemon_reuniclus">Reuniclus</string>
+    <string name="pokemon_ducklett">Ducklett</string>
+    <string name="pokemon_swanna">Swanna</string>
+    <string name="pokemon_vanillite">Vanillite</string>
+    <string name="pokemon_vanillish">Vanillish</string>
+    <string name="pokemon_vanilluxe">Vanilluxe</string>
+    <string name="pokemon_deerling">Deerling</string>
+    <string name="pokemon_sawsbuck">Sawsbuck</string>
+    <string name="pokemon_emolga">Emolga</string>
+    <string name="pokemon_karrablast">Karrablast</string>
+    <string name="pokemon_escavalier">Escavalier</string>
+    <string name="pokemon_foongus">Foongus</string>
+    <string name="pokemon_amoonguss">Amoonguss</string>
+    <string name="pokemon_frillish">Frillish</string>
+    <string name="pokemon_jellicent">Jellicent</string>
+    <string name="pokemon_alomomola">Alomomola</string>
+    <string name="pokemon_joltik">Joltik</string>
+    <string name="pokemon_galvantula">Galvantula</string>
+    <string name="pokemon_ferroseed">Ferroseed</string>
+    <string name="pokemon_ferrothorn">Ferrothorn</string>
+    <string name="pokemon_klink">Klink</string>
+    <string name="pokemon_klang">Klang</string>
+    <string name="pokemon_klinklang">Klinklang</string>
+    <string name="pokemon_tynamo">Tynamo</string>
+    <string name="pokemon_eelektrik">Eelektrik</string>
+    <string name="pokemon_eelektross">Eelektross</string>
+    <string name="pokemon_elgyem">Elgyem</string>
+    <string name="pokemon_beheeyem">Beheeyem</string>
+    <string name="pokemon_litwick">Litwick</string>
+    <string name="pokemon_lampent">Lampent</string>
+    <string name="pokemon_chandelure">Chandelure</string>
+    <string name="pokemon_axew">Axew</string>
+    <string name="pokemon_fraxure">Fraxure</string>
+    <string name="pokemon_haxorus">Haxorus</string>
+    <string name="pokemon_cubchoo">Cubchoo</string>
+    <string name="pokemon_beartic">Beartic</string>
+    <string name="pokemon_cryogonal">Cryogonal</string>
+    <string name="pokemon_shelmet">Shelmet</string>
+    <string name="pokemon_accelgor">Accelgor</string>
+    <string name="pokemon_stunfisk">Stunfisk</string>
+    <string name="pokemon_mienfoo">Mienfoo</string>
+    <string name="pokemon_mienshao">Mienshao</string>
+    <string name="pokemon_druddigon">Druddigon</string>
+    <string name="pokemon_golett">Golett</string>
+    <string name="pokemon_golurk">Golurk</string>
+    <string name="pokemon_pawniard">Pawniard</string>
+    <string name="pokemon_bisharp">Bisharp</string>
+    <string name="pokemon_bouffalant">Bouffalant</string>
+    <string name="pokemon_rufflet">Rufflet</string>
+    <string name="pokemon_braviary">Braviary</string>
+    <string name="pokemon_vullaby">Vullaby</string>
+    <string name="pokemon_mandibuzz">Mandibuzz</string>
+    <string name="pokemon_heatmor">Heatmor</string>
+    <string name="pokemon_durant">Durant</string>
+    <string name="pokemon_deino">Deino</string>
+    <string name="pokemon_zweilous">Zweilous</string>
+    <string name="pokemon_hydreigon">Hydreigon</string>
+    <string name="pokemon_larvesta">Larvesta</string>
+    <string name="pokemon_volcarona">Volcarona</string>
+    <string name="pokemon_cobalion">Cobalion</string>
+    <string name="pokemon_terrakion">Terrakion</string>
+    <string name="pokemon_virizion">Virizion</string>
+    <string name="pokemon_tornadus">Tornadus</string>
+    <string name="pokemon_thundurus">Thundurus</string>
+    <string name="pokemon_reshiram">Reshiram</string>
+    <string name="pokemon_zekrom">Zekrom</string>
+    <string name="pokemon_landorus">Landorus</string>
+    <string name="pokemon_kyurem">Kyurem</string>
+    <string name="pokemon_keldeo">Keldeo</string>
+    <string name="pokemon_meloetta">Meloetta</string>
+    <string name="pokemon_genesect">Genesect</string>
+
+    <string-array name="Generation_Five">
+        <item>@string/pokemon_victini</item>
+        <item>@string/pokemon_snivy</item>
+        <item>@string/pokemon_servine</item>
+        <item>@string/pokemon_serperior</item>
+        <item>@string/pokemon_tepig</item>
+        <item>@string/pokemon_pignite</item>
+        <item>@string/pokemon_emboar</item>
+        <item>@string/pokemon_oshawott</item>
+        <item>@string/pokemon_dewott</item>
+        <item>@string/pokemon_samurott</item>
+        <item>@string/pokemon_patrat</item>
+        <item>@string/pokemon_watchog</item>
+        <item>@string/pokemon_lillipup</item>
+        <item>@string/pokemon_herdier</item>
+        <item>@string/pokemon_stoutland</item>
+        <item>@string/pokemon_purrloin</item>
+        <item>@string/pokemon_liepard</item>
+        <item>@string/pokemon_pansage</item>
+        <item>@string/pokemon_simisage</item>
+        <item>@string/pokemon_pansear</item>
+        <item>@string/pokemon_simisear</item>
+        <item>@string/pokemon_panpour</item>
+        <item>@string/pokemon_simipour</item>
+        <item>@string/pokemon_munna</item>
+        <item>@string/pokemon_musharna</item>
+        <item>@string/pokemon_pidove</item>
+        <item>@string/pokemon_tranquill</item>
+        <item>@string/pokemon_unfezant</item>
+        <item>@string/pokemon_blitzle</item>
+        <item>@string/pokemon_zebstrika</item>
+        <item>@string/pokemon_roggenrola</item>
+        <item>@string/pokemon_boldore</item>
+        <item>@string/pokemon_gigalith</item>
+        <item>@string/pokemon_woobat</item>
+        <item>@string/pokemon_swoobat</item>
+        <item>@string/pokemon_drilbur</item>
+        <item>@string/pokemon_excadrill</item>
+        <item>@string/pokemon_audino</item>
+        <item>@string/pokemon_timburr</item>
+        <item>@string/pokemon_gurdurr</item>
+        <item>@string/pokemon_conkeldurr</item>
+        <item>@string/pokemon_tympole</item>
+        <item>@string/pokemon_palpitoad</item>
+        <item>@string/pokemon_seismitoad</item>
+        <item>@string/pokemon_throh</item>
+        <item>@string/pokemon_sawk</item>
+        <item>@string/pokemon_sewaddle</item>
+        <item>@string/pokemon_swadloon</item>
+        <item>@string/pokemon_leavanny</item>
+        <item>@string/pokemon_venipede</item>
+        <item>@string/pokemon_whirlipede</item>
+        <item>@string/pokemon_scolipede</item>
+        <item>@string/pokemon_cottonee</item>
+        <item>@string/pokemon_whimsicott</item>
+        <item>@string/pokemon_petilil</item>
+        <item>@string/pokemon_lilligant</item>
+        <item>@string/pokemon_basculin</item>
+        <item>@string/pokemon_sandile</item>
+        <item>@string/pokemon_krokorok</item>
+        <item>@string/pokemon_krookodile</item>
+        <item>@string/pokemon_darumaka</item>
+        <item>@string/pokemon_darmanitan</item>
+        <item>@string/pokemon_maractus</item>
+        <item>@string/pokemon_dwebble</item>
+        <item>@string/pokemon_crustle</item>
+        <item>@string/pokemon_scraggy</item>
+        <item>@string/pokemon_scrafty</item>
+        <item>@string/pokemon_sigilyph</item>
+        <item>@string/pokemon_yamask</item>
+        <item>@string/pokemon_cofagrigus</item>
+        <item>@string/pokemon_tirtouga</item>
+        <item>@string/pokemon_carracosta</item>
+        <item>@string/pokemon_archen</item>
+        <item>@string/pokemon_archeops</item>
+        <item>@string/pokemon_trubbish</item>
+        <item>@string/pokemon_garbodor</item>
+        <item>@string/pokemon_zorua</item>
+        <item>@string/pokemon_zoroark</item>
+        <item>@string/pokemon_minccino</item>
+        <item>@string/pokemon_cinccino</item>
+        <item>@string/pokemon_gothita</item>
+        <item>@string/pokemon_gothorita</item>
+        <item>@string/pokemon_gothitelle</item>
+        <item>@string/pokemon_solosis</item>
+        <item>@string/pokemon_duosion</item>
+        <item>@string/pokemon_reuniclus</item>
+        <item>@string/pokemon_ducklett</item>
+        <item>@string/pokemon_swanna</item>
+        <item>@string/pokemon_vanillite</item>
+        <item>@string/pokemon_vanillish</item>
+        <item>@string/pokemon_vanilluxe</item>
+        <item>@string/pokemon_deerling</item>
+        <item>@string/pokemon_sawsbuck</item>
+        <item>@string/pokemon_emolga</item>
+        <item>@string/pokemon_karrablast</item>
+        <item>@string/pokemon_escavalier</item>
+        <item>@string/pokemon_foongus</item>
+        <item>@string/pokemon_amoonguss</item>
+        <item>@string/pokemon_frillish</item>
+        <item>@string/pokemon_jellicent</item>
+        <item>@string/pokemon_alomomola</item>
+        <item>@string/pokemon_joltik</item>
+        <item>@string/pokemon_galvantula</item>
+        <item>@string/pokemon_ferroseed</item>
+        <item>@string/pokemon_ferrothorn</item>
+        <item>@string/pokemon_klink</item>
+        <item>@string/pokemon_klang</item>
+        <item>@string/pokemon_klinklang</item>
+        <item>@string/pokemon_tynamo</item>
+        <item>@string/pokemon_eelektrik</item>
+        <item>@string/pokemon_eelektross</item>
+        <item>@string/pokemon_elgyem</item>
+        <item>@string/pokemon_beheeyem</item>
+        <item>@string/pokemon_litwick</item>
+        <item>@string/pokemon_lampent</item>
+        <item>@string/pokemon_chandelure</item>
+        <item>@string/pokemon_axew</item>
+        <item>@string/pokemon_fraxure</item>
+        <item>@string/pokemon_haxorus</item>
+        <item>@string/pokemon_cubchoo</item>
+        <item>@string/pokemon_beartic</item>
+        <item>@string/pokemon_cryogonal</item>
+        <item>@string/pokemon_shelmet</item>
+        <item>@string/pokemon_accelgor</item>
+        <item>@string/pokemon_stunfisk</item>
+        <item>@string/pokemon_mienfoo</item>
+        <item>@string/pokemon_mienshao</item>
+        <item>@string/pokemon_druddigon</item>
+        <item>@string/pokemon_golett</item>
+        <item>@string/pokemon_golurk</item>
+        <item>@string/pokemon_pawniard</item>
+        <item>@string/pokemon_bisharp</item>
+        <item>@string/pokemon_bouffalant</item>
+        <item>@string/pokemon_rufflet</item>
+        <item>@string/pokemon_braviary</item>
+        <item>@string/pokemon_vullaby</item>
+        <item>@string/pokemon_mandibuzz</item>
+        <item>@string/pokemon_heatmor</item>
+        <item>@string/pokemon_durant</item>
+        <item>@string/pokemon_deino</item>
+        <item>@string/pokemon_zweilous</item>
+        <item>@string/pokemon_hydreigon</item>
+        <item>@string/pokemon_larvesta</item>
+        <item>@string/pokemon_volcarona</item>
+        <item>@string/pokemon_cobalion</item>
+        <item>@string/pokemon_terrakion</item>
+        <item>@string/pokemon_virizion</item>
+        <item>@string/pokemon_tornadus</item>
+        <item>@string/pokemon_thundurus</item>
+        <item>@string/pokemon_reshiram</item>
+        <item>@string/pokemon_zekrom</item>
+        <item>@string/pokemon_landorus</item>
+        <item>@string/pokemon_kyurem</item>
+        <item>@string/pokemon_keldeo</item>
+        <item>@string/pokemon_meloetta</item>
+        <item>@string/pokemon_genesect</item>
+    </string-array>
+
+    <!--Generation Six-->
+    <string name="pokemon_chespin">Chespin</string>
+    <string name="pokemon_quilladin">Quilladin</string>
+    <string name="pokemon_chesnaught">Chesnaught</string>
+    <string name="pokemon_fennekin">Fennekin</string>
+    <string name="pokemon_braixen">Braixen</string>
+    <string name="pokemon_delphox">Delphox</string>
+    <string name="pokemon_froakie">Froakie</string>
+    <string name="pokemon_frogadier">Frogadier</string>
+    <string name="pokemon_greninja">Greninja</string>
+    <string name="pokemon_bunnelby">Bunnelby</string>
+    <string name="pokemon_diggersby">Diggersby</string>
+    <string name="pokemon_fletchling">Fletchling</string>
+    <string name="pokemon_fletchinder">Fletchinder</string>
+    <string name="pokemon_talonflame">Talonflame</string>
+    <string name="pokemon_scatterbug">Scatterbug</string>
+    <string name="pokemon_spewpa">Spewpa</string>
+    <string name="pokemon_vivillon">Vivillon</string>
+    <string name="pokemon_litleo">Litleo</string>
+    <string name="pokemon_pyroar">Pyroar</string>
+    <string name="pokemon_flabebe">Flabebe</string>
+    <string name="pokemon_floette">Floette</string>
+    <string name="pokemon_florges">Florges</string>
+    <string name="pokemon_skiddo">Skiddo</string>
+    <string name="pokemon_gogoat">Gogoat</string>
+    <string name="pokemon_pancham">Pancham</string>
+    <string name="pokemon_pangoro">Pangoro</string>
+    <string name="pokemon_furfrou">Furfrou</string>
+    <string name="pokemon_espurr">Espurr</string>
+    <string name="pokemon_meowstic">Meowstic</string>
+    <string name="pokemon_honedge">Honedge</string>
+    <string name="pokemon_doublade">Doublade</string>
+    <string name="pokemon_aegislash">Aegislash</string>
+    <string name="pokemon_spritzee">Spritzee</string>
+    <string name="pokemon_aromatisse">Aromatisse</string>
+    <string name="pokemon_swirlix">Swirlix</string>
+    <string name="pokemon_slurpuff">Slurpuff</string>
+    <string name="pokemon_inkay">Inkay</string>
+    <string name="pokemon_malamar">Malamar</string>
+    <string name="pokemon_binacle">Binacle</string>
+    <string name="pokemon_barbaracle">Barbaracle</string>
+    <string name="pokemon_skrelp">Skrelp</string>
+    <string name="pokemon_dragalge">Dragalge</string>
+    <string name="pokemon_clauncher">Clauncher</string>
+    <string name="pokemon_clawitzer">Clawitzer</string>
+    <string name="pokemon_helioptile">Helioptile</string>
+    <string name="pokemon_heliolisk">Heliolisk</string>
+    <string name="pokemon_tyrunt">Tyrunt</string>
+    <string name="pokemon_tyrantrum">Tyrantrum</string>
+    <string name="pokemon_amaura">Amaura</string>
+    <string name="pokemon_aurorus">Aurorus</string>
+    <string name="pokemon_sylveon">Sylveon</string>
+    <string name="pokemon_hawlucha">Hawlucha</string>
+    <string name="pokemon_dedenne">Dedenne</string>
+    <string name="pokemon_carbink">Carbink</string>
+    <string name="pokemon_goomy">Goomy</string>
+    <string name="pokemon_sliggoo">Sliggoo</string>
+    <string name="pokemon_goodra">Goodra</string>
+    <string name="pokemon_klefki">Klefki</string>
+    <string name="pokemon_phantump">Phantump</string>
+    <string name="pokemon_trevenant">Trevenant</string>
+    <string name="pokemon_pumpkaboo">Pumpkaboo</string>
+    <string name="pokemon_gourgeist">Gourgeist</string>
+    <string name="pokemon_bergmite">Bergmite</string>
+    <string name="pokemon_avalugg">Avalugg</string>
+    <string name="pokemon_noibat">Noibat</string>
+    <string name="pokemon_noivern">Noivern</string>
+    <string name="pokemon_xerneas">Xerneas</string>
+    <string name="pokemon_yveltal">Yveltal</string>
+    <string name="pokemon_zygarde">Zygarde</string>
+    <string name="pokemon_diancie">Diancie</string>
+    <string name="pokemon_hoopa">Hoopa</string>
+    <string name="pokemon_volcanion">Volcanion</string>
+
+    <string-array name="Generation_Six">
+        <item>@string/pokemon_chespin</item>
+        <item>@string/pokemon_quilladin</item>
+        <item>@string/pokemon_chesnaught</item>
+        <item>@string/pokemon_fennekin</item>
+        <item>@string/pokemon_braixen</item>
+        <item>@string/pokemon_delphox</item>
+        <item>@string/pokemon_froakie</item>
+        <item>@string/pokemon_frogadier</item>
+        <item>@string/pokemon_greninja</item>
+        <item>@string/pokemon_bunnelby</item>
+        <item>@string/pokemon_diggersby</item>
+        <item>@string/pokemon_fletchling</item>
+        <item>@string/pokemon_fletchinder</item>
+        <item>@string/pokemon_talonflame</item>
+        <item>@string/pokemon_scatterbug</item>
+        <item>@string/pokemon_spewpa</item>
+        <item>@string/pokemon_vivillon</item>
+        <item>@string/pokemon_litleo</item>
+        <item>@string/pokemon_pyroar</item>
+        <item>@string/pokemon_flabebe</item>
+        <item>@string/pokemon_floette</item>
+        <item>@string/pokemon_florges</item>
+        <item>@string/pokemon_skiddo</item>
+        <item>@string/pokemon_gogoat</item>
+        <item>@string/pokemon_pancham</item>
+        <item>@string/pokemon_pangoro</item>
+        <item>@string/pokemon_furfrou</item>
+        <item>@string/pokemon_espurr</item>
+        <item>@string/pokemon_meowstic</item>
+        <item>@string/pokemon_honedge</item>
+        <item>@string/pokemon_doublade</item>
+        <item>@string/pokemon_aegislash</item>
+        <item>@string/pokemon_spritzee</item>
+        <item>@string/pokemon_aromatisse</item>
+        <item>@string/pokemon_swirlix</item>
+        <item>@string/pokemon_slurpuff</item>
+        <item>@string/pokemon_inkay</item>
+        <item>@string/pokemon_malamar</item>
+        <item>@string/pokemon_binacle</item>
+        <item>@string/pokemon_barbaracle</item>
+        <item>@string/pokemon_skrelp</item>
+        <item>@string/pokemon_dragalge</item>
+        <item>@string/pokemon_clauncher</item>
+        <item>@string/pokemon_clawitzer</item>
+        <item>@string/pokemon_helioptile</item>
+        <item>@string/pokemon_heliolisk</item>
+        <item>@string/pokemon_tyrunt</item>
+        <item>@string/pokemon_tyrantrum</item>
+        <item>@string/pokemon_amaura</item>
+        <item>@string/pokemon_aurorus</item>
+        <item>@string/pokemon_sylveon</item>
+        <item>@string/pokemon_hawlucha</item>
+        <item>@string/pokemon_dedenne</item>
+        <item>@string/pokemon_carbink</item>
+        <item>@string/pokemon_goomy</item>
+        <item>@string/pokemon_sliggoo</item>
+        <item>@string/pokemon_goodra</item>
+        <item>@string/pokemon_klefki</item>
+        <item>@string/pokemon_phantump</item>
+        <item>@string/pokemon_trevenant</item>
+        <item>@string/pokemon_pumpkaboo</item>
+        <item>@string/pokemon_gourgeist</item>
+        <item>@string/pokemon_bergmite</item>
+        <item>@string/pokemon_avalugg</item>
+        <item>@string/pokemon_noibat</item>
+        <item>@string/pokemon_noivern</item>
+        <item>@string/pokemon_xerneas</item>
+        <item>@string/pokemon_yveltal</item>
+        <item>@string/pokemon_zygarde</item>
+        <item>@string/pokemon_diancie</item>
+        <item>@string/pokemon_hoopa</item>
+        <item>@string/pokemon_volcanion</item>
+    </string-array>
+
+    <!--Generation Seven-->
+    <string name="pokemon_rowlet">Rowlet</string>
+    <string name="pokemon_dartrix">Dartrix</string>
+    <string name="pokemon_decidueye">Decidueye</string>
+    <string name="pokemon_litten">Litten</string>
+    <string name="pokemon_torracat">Torracat</string>
+    <string name="pokemon_incineroar">Incineroar</string>
+    <string name="pokemon_popplio">Popplio</string>
+    <string name="pokemon_brionne">Brionne</string>
+    <string name="pokemon_primarina">Primarina</string>
+    <string name="pokemon_pikipek">Pikipek</string>
+    <string name="pokemon_trumbeak">Trumbeak</string>
+    <string name="pokemon_toucannon">Toucannon</string>
+    <string name="pokemon_yungoos">Yungoos</string>
+    <string name="pokemon_gumshoos">Gumshoos</string>
+    <string name="pokemon_grubbin">Grubbin</string>
+    <string name="pokemon_charjabug">Charjabug</string>
+    <string name="pokemon_vikavolt">Vikavolt</string>
+    <string name="pokemon_crabrawler">Crabrawler</string>
+    <string name="pokemon_crabominable">Crabominable</string>
+    <string name="pokemon_oricorio">Oricorio</string>
+    <string name="pokemon_cutiefly">Cutiefly</string>
+    <string name="pokemon_ribombee">Ribombee</string>
+    <string name="pokemon_rockruff">Rockruff</string>
+    <string name="pokemon_lycanroc">Lycanroc</string>
+    <string name="pokemon_wishiwashi">Wishiwashi</string>
+    <string name="pokemon_mareanie">Mareanie</string>
+    <string name="pokemon_toxapex">Toxapex</string>
+    <string name="pokemon_mudbray">Mudbray</string>
+    <string name="pokemon_mudsdale">Mudsdale</string>
+    <string name="pokemon_dewpider">Dewpider</string>
+    <string name="pokemon_araquanid">Araquanid</string>
+    <string name="pokemon_fomantis">Fomantis</string>
+    <string name="pokemon_lurantis">Lurantis</string>
+    <string name="pokemon_morelull">Morelull</string>
+    <string name="pokemon_shiinotic">Shiinotic</string>
+    <string name="pokemon_salandit">Salandit</string>
+    <string name="pokemon_salazzle">Salazzle</string>
+    <string name="pokemon_stufful">Stufful</string>
+    <string name="pokemon_bewear">Bewear</string>
+    <string name="pokemon_bounsweet">Bounsweet</string>
+    <string name="pokemon_steenee">Steenee</string>
+    <string name="pokemon_tsareena">Tsareena</string>
+    <string name="pokemon_comfey">Comfey</string>
+    <string name="pokemon_oranguru">Oranguru</string>
+    <string name="pokemon_passimian">Passimian</string>
+    <string name="pokemon_wimpod">Wimpod</string>
+    <string name="pokemon_golisopod">Golisopod</string>
+    <string name="pokemon_sandygast">Sandygast</string>
+    <string name="pokemon_palossand">Palossand</string>
+    <string name="pokemon_pyukumuku">Pyukumuku</string>
+    <string name="pokemon_typenull">TypeNull</string>
+    <string name="pokemon_silvally">Silvally</string>
+    <string name="pokemon_minior">Minior</string>
+    <string name="pokemon_komala">Komala</string>
+    <string name="pokemon_turtonator">Turtonator</string>
+    <string name="pokemon_togedemaru">Togedemaru</string>
+    <string name="pokemon_mimikyu">Mimikyu</string>
+    <string name="pokemon_bruxish">Bruxish</string>
+    <string name="pokemon_drampa">Drampa</string>
+    <string name="pokemon_dhelmise">Dhelmise</string>
+    <string name="pokemon_jangmo_o">Jangmo-o</string>
+    <string name="pokemon_hakamo_o">Hakamo-o</string>
+    <string name="pokemon_kommo_o">Kommo-o</string>
+    <string name="pokemon_tapukoko">TapuKoko</string>
+    <string name="pokemon_tapulele">TapuLele</string>
+    <string name="pokemon_tapubulu">TapuBulu</string>
+    <string name="pokemon_tapufini">TapuFini</string>
+    <string name="pokemon_cosmog">Cosmog</string>
+    <string name="pokemon_cosmoem">Cosmoem</string>
+    <string name="pokemon_solgaleo">Solgaleo</string>
+    <string name="pokemon_lunala">Lunala</string>
+    <string name="pokemon_nihilego">Nihilego</string>
+    <string name="pokemon_buzzwole">Buzzwole</string>
+    <string name="pokemon_pheromosa">Pheromosa</string>
+    <string name="pokemon_xurkitree">Xurkitree</string>
+    <string name="pokemon_celesteela">Celesteela</string>
+    <string name="pokemon_kartana">Kartana</string>
+    <string name="pokemon_guzzlord">Guzzlord</string>
+    <string name="pokemon_necrozma">Necrozma</string>
+    <string name="pokemon_magearna">Magearna</string>
+    <string name="pokemon_marshadow">Marshadow</string>
+    <string name="pokemon_poipole">Poipole</string>
+    <string name="pokemon_naganadel">Naganadel</string>
+    <string name="pokemon_stakataka">Stakataka</string>
+    <string name="pokemon_blacephalon">Blacephalon</string>
+    <string name="pokemon_zeraora">Zeraora</string>
+
+    <string-array name="Generation_Seven">
+        <item>@string/pokemon_rowlet</item>
+        <item>@string/pokemon_dartrix</item>
+        <item>@string/pokemon_decidueye</item>
+        <item>@string/pokemon_litten</item>
+        <item>@string/pokemon_torracat</item>
+        <item>@string/pokemon_incineroar</item>
+        <item>@string/pokemon_popplio</item>
+        <item>@string/pokemon_brionne</item>
+        <item>@string/pokemon_primarina</item>
+        <item>@string/pokemon_pikipek</item>
+        <item>@string/pokemon_trumbeak</item>
+        <item>@string/pokemon_toucannon</item>
+        <item>@string/pokemon_yungoos</item>
+        <item>@string/pokemon_gumshoos</item>
+        <item>@string/pokemon_grubbin</item>
+        <item>@string/pokemon_charjabug</item>
+        <item>@string/pokemon_vikavolt</item>
+        <item>@string/pokemon_crabrawler</item>
+        <item>@string/pokemon_crabominable</item>
+        <item>@string/pokemon_oricorio</item>
+        <item>@string/pokemon_cutiefly</item>
+        <item>@string/pokemon_ribombee</item>
+        <item>@string/pokemon_rockruff</item>
+        <item>@string/pokemon_lycanroc</item>
+        <item>@string/pokemon_wishiwashi</item>
+        <item>@string/pokemon_mareanie</item>
+        <item>@string/pokemon_toxapex</item>
+        <item>@string/pokemon_mudbray</item>
+        <item>@string/pokemon_mudsdale</item>
+        <item>@string/pokemon_dewpider</item>
+        <item>@string/pokemon_araquanid</item>
+        <item>@string/pokemon_fomantis</item>
+        <item>@string/pokemon_lurantis</item>
+        <item>@string/pokemon_morelull</item>
+        <item>@string/pokemon_shiinotic</item>
+        <item>@string/pokemon_salandit</item>
+        <item>@string/pokemon_salazzle</item>
+        <item>@string/pokemon_stufful</item>
+        <item>@string/pokemon_bewear</item>
+        <item>@string/pokemon_bounsweet</item>
+        <item>@string/pokemon_steenee</item>
+        <item>@string/pokemon_tsareena</item>
+        <item>@string/pokemon_comfey</item>
+        <item>@string/pokemon_oranguru</item>
+        <item>@string/pokemon_passimian</item>
+        <item>@string/pokemon_wimpod</item>
+        <item>@string/pokemon_golisopod</item>
+        <item>@string/pokemon_sandygast</item>
+        <item>@string/pokemon_palossand</item>
+        <item>@string/pokemon_pyukumuku</item>
+        <item>@string/pokemon_typenull</item>
+        <item>@string/pokemon_silvally</item>
+        <item>@string/pokemon_minior</item>
+        <item>@string/pokemon_komala</item>
+        <item>@string/pokemon_turtonator</item>
+        <item>@string/pokemon_togedemaru</item>
+        <item>@string/pokemon_mimikyu</item>
+        <item>@string/pokemon_bruxish</item>
+        <item>@string/pokemon_drampa</item>
+        <item>@string/pokemon_dhelmise</item>
+        <item>@string/pokemon_jangmo-o</item>
+        <item>@string/pokemon_hakamo-o</item>
+        <item>@string/pokemon_kommo-o</item>
+        <item>@string/pokemon_tapukoko</item>
+        <item>@string/pokemon_tapulele</item>
+        <item>@string/pokemon_tapubulu</item>
+        <item>@string/pokemon_tapufini</item>
+        <item>@string/pokemon_cosmog</item>
+        <item>@string/pokemon_cosmoem</item>
+        <item>@string/pokemon_solgaleo</item>
+        <item>@string/pokemon_lunala</item>
+        <item>@string/pokemon_nihilego</item>
+        <item>@string/pokemon_buzzwole</item>
+        <item>@string/pokemon_pheromosa</item>
+        <item>@string/pokemon_xurkitree</item>
+        <item>@string/pokemon_celesteela</item>
+        <item>@string/pokemon_kartana</item>
+        <item>@string/pokemon_guzzlord</item>
+        <item>@string/pokemon_necrozma</item>
+        <item>@string/pokemon_magearna</item>
+        <item>@string/pokemon_marshadow</item>
+        <item>@string/pokemon_poipole</item>
+        <item>@string/pokemon_naganadel</item>
+        <item>@string/pokemon_stakataka</item>
+        <item>@string/pokemon_blacephalon</item>
+        <item>@string/pokemon_zeraora</item>
+    </string-array>
+</resources>

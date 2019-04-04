@@ -14,11 +14,13 @@ public class Pokemon {
 	private Bitmap bitmap;
 	private Boolean shiny;
 	private Boolean form;
+	private RNGRolls rng;
+	private Breeding breeding;
 
 	Pokemon(Context context) {
 		SqliteHelper sql = new SqliteHelper(context);
-		RNGRolls rng = new RNGRolls();
-		Breeding breeding = new Breeding();
+		rng = new RNGRolls();
+		breeding = new Breeding();
 
 
 		dexNumber = rng.rollDexNumber();
@@ -29,12 +31,14 @@ public class Pokemon {
         form = sql.checkPokemonForm(dexNumber);
         bitmap = setBitmap(name, context);
 
+        sql.close();
+
 	}
 
 	Pokemon(Context context, int dexNum) {
 		SqliteHelper sql = new SqliteHelper(context);
-		RNGRolls rng = new RNGRolls();
-        Breeding breeding = new Breeding();
+		rng = new RNGRolls();
+        breeding = new Breeding();
 
 		dexNumber = dexNum;
 
@@ -45,13 +49,28 @@ public class Pokemon {
         shiny = rng.shinyRoll(breeding.getForeignParent(), breeding.getShinyCharm());
         bitmap = setBitmap(name, context);
 
+        sql.close();
+
+	}
+
+	public void setNewPokemon(Context context, int dex)
+	{
+		SqliteHelper sql = new SqliteHelper(context);
+		dexNumber = dex;
+
+		name = sql.getPokemonName(dexNumber);
+		height = sql.getPokemonHeight(dexNumber);
+		weight = sql.getPokemonWeight(dexNumber);
+		form = sql.checkPokemonForm(dexNumber);
+		shiny = rng.shinyRoll(breeding.getForeignParent(), breeding.getShinyCharm());
+		bitmap = setBitmap(name, context);
 	}
 
     private Bitmap setBitmap(String name, Context context)
     {
         int resId;
         Bitmap bitties;
-        resId = queryResourceId(name, context);
+        resId = getResourceId(name, context);
 
         bitties = decodeBitmap(resId, context);
 
@@ -60,7 +79,7 @@ public class Pokemon {
     }
 
 
-	private int queryResourceId(String name, Context context) {
+	private int getResourceId(String name, Context context) {
 		int resId;
         String shine, formie;
 

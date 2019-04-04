@@ -19,8 +19,8 @@ package xyz.apricorn.sora.dialga;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.android.wearable.watchface.util.DigitalWatchFaceUtil;
-import com.example.android.wearable.watchface.watchface.DigitalWatchFaceService;
+import xyz.apricorn.sora.dialga.DialgaWatchFaceUtil;
+import xyz.apricorn.sora.dialga.DialgaWatchFaceService;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.wearable.DataMap;
@@ -31,12 +31,12 @@ import com.google.android.gms.wearable.WearableListenerService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * A {@link WearableListenerService} listening for {@link DigitalWatchFaceService} config messages
+ * A {@link WearableListenerService} listening for {@link DialgaWatchFaceService} config messages
  * and updating the config {@link com.google.android.gms.wearable.DataItem} accordingly.
  */
-public class DigitalWatchFaceConfigListenerService extends WearableListenerService
+public class DialgaWatchFaceConfigListenerService extends WearableListenerService
         implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
-    private static final String TAG = "DigitalListenerService";
+    private static final String TAG = "DialgaListenerService";
 
     private GoogleApiClient mGoogleApiClient;
 
@@ -47,7 +47,7 @@ public class DigitalWatchFaceConfigListenerService extends WearableListenerServi
             Log.d(TAG, "onMessageReceived: " + messageEvent);
         }
 
-        if (!messageEvent.getPath().equals(DigitalWatchFaceUtil.PATH_WITH_FEATURE)) {
+        if (!messageEvent.getPath().equals(DialgaWatchFaceUtil.PATH_WITH_FEATURE)) {
             return;
         }
         byte[] rawData = messageEvent.getData();
@@ -72,7 +72,7 @@ public class DigitalWatchFaceConfigListenerService extends WearableListenerServi
             }
         }
 
-        DigitalWatchFaceUtil.overwriteKeysInConfigDataMap(mGoogleApiClient, configKeysToOverwrite);
+        DialgaWatchFaceUtil.overwriteKeysInConfigDataMap(mGoogleApiClient, configKeysToOverwrite);
     }
 
     @Override // GoogleApiClient.ConnectionCallbacks

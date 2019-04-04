@@ -30,7 +30,7 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/cosmog"
+            app:srcCompat="@drawable/poke"
             tools:layout_editor_absoluteX="84dp"
             tools:layout_editor_absoluteY="154dp" />
 
@@ -43,7 +43,7 @@
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/cosmog"
+            app:srcCompat="@drawable/poke"
             tools:layout_editor_absoluteX="36dp"
             tools:layout_editor_absoluteY="307dp" />
 
@@ -71,7 +71,7 @@
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/cosmog"
+            app:srcCompat="@drawable/poke"
             tools:layout_editor_absoluteX="263dp"
             tools:layout_editor_absoluteY="447dp" />
 
@@ -79,25 +79,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="25dp" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button"
-                tools:layout_editor_absoluteX="162dp"
-                tools:layout_editor_absoluteY="320dp" />
-
-        </LinearLayout>
 
         <Space
             android:layout_width="wrap_content"
@@ -108,7 +89,7 @@
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/cosmog"
+            app:srcCompat="@drawable/poke"
             tools:layout_editor_absoluteX="248dp"
             tools:layout_editor_absoluteY="154dp" />
 
@@ -136,7 +117,7 @@
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/cosmog"
+            app:srcCompat="@drawable/poke"
             tools:layout_editor_absoluteX="97dp"
             tools:layout_editor_absoluteY="451dp" />
 
@@ -149,7 +130,7 @@
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/cosmog"
+            app:srcCompat="@drawable/poke"
             tools:layout_editor_absoluteX="287dp"
             tools:layout_editor_absoluteY="307dp" />
 
@@ -159,5 +140,58 @@
             android:layout_weight="1" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <!--<Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="320dp" />-->
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="90dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/poke" />
+
+        <!--<Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />-->
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </android.support.constraint.ConstraintLayout>

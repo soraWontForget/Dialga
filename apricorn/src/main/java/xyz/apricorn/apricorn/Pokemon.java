@@ -53,6 +53,10 @@ public class Pokemon {
 
 	}
 
+	public void setNewPokemon(String name){
+		dexNumber 
+	}
+
     private Bitmap setBitmap(Context context)
     {
         int resId;

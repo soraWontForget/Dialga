@@ -34,6 +34,9 @@
             <meta-data
                 android:name="com.google.android.wearable.watchface.preview_circular"
                 android:resource="@drawable/dawn" />
+            <meta-data
+                android:name="com.google.android.wearable.watchface.companionConfigurationAction"
+                android:value="com.example.android.wearable.watchface.CONFIG_ANALOG"/>
 
             <!--
                 <meta-data
